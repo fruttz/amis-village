@@ -8,6 +8,82 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "CustomEventConverter",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Converter/custom_event_converter.gd"
+}, {
+"base": "Node",
+"class": "DialogicAnimation",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Character/class_dialogic_animation.gd"
+}, {
+"base": "CanvasLayer",
+"class": "DialogicNode_BackgroundHolder",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Background/node_background_holder.gd"
+}, {
+"base": "AudioStreamPlayer",
+"class": "DialogicNode_ButtonSound",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Choice/node_button_sound.gd"
+}, {
+"base": "Button",
+"class": "DialogicNode_ChoiceButton",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Choice/node_choice_button.gd"
+}, {
+"base": "RichTextLabel",
+"class": "DialogicNode_DialogText",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Text/node_dialog_text.gd"
+}, {
+"base": "Label",
+"class": "DialogicNode_NameLabel",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Text/node_name_label.gd"
+}, {
+"base": "CanvasLayer",
+"class": "DialogicNode_PortraitHolder",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Character/node_portrait_holder.gd"
+}, {
+"base": "Marker2D",
+"class": "DialogicNode_PortraitPosition",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Character/node_portrait_position.gd"
+}, {
+"base": "Control",
+"class": "DialogicNode_Style",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/Style/node_style.gd"
+}, {
+"base": "Control",
+"class": "DialogicNode_TextInput",
+"language": "GDScript",
+"path": "res://addons/dialogic/Events/TextInput/node_text_input.gd"
+}, {
+"base": "Node",
+"class": "DialogicSubsystem",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/Dialogic_Subsystem.gd"
+} ]
+_global_script_class_icons={
+"CustomEventConverter": "",
+"DialogicAnimation": "",
+"DialogicNode_BackgroundHolder": "",
+"DialogicNode_ButtonSound": "",
+"DialogicNode_ChoiceButton": "",
+"DialogicNode_DialogText": "",
+"DialogicNode_NameLabel": "",
+"DialogicNode_PortraitHolder": "",
+"DialogicNode_PortraitPosition": "",
+"DialogicNode_Style": "",
+"DialogicNode_TextInput": "",
+"DialogicSubsystem": ""
+}
+
 [application]
 
 config/name="Amis Village Game Design"
