@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Amis Village Game Design"
-run/main_scene="res://src/Scenes/Main/MainScene.tscn"
+run/main_scene="res://src/Scenes/Fishing/FishScene.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
