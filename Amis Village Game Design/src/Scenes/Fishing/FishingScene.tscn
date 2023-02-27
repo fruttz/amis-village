@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/Scenes/Fishing/Combat.gd" type="Script" id=1]
+[ext_resource path="res://src/Scenes/Fishing/FishingScene.gd" type="Script" id=2]
 
 [node name="Fishing" type="Node"]
+script = ExtResource( 2 )
 
 [node name="Combat" type="Control" parent="."]
 margin_right = 537.0
@@ -26,6 +28,5 @@ percent_visible = false
 [node name="Timer" type="Timer" parent="Combat"]
 process_mode = 0
 wait_time = 0.05
-autostart = true
 
 [connection signal="timeout" from="Combat/Timer" to="Combat" method="_on_Timer_timeout"]

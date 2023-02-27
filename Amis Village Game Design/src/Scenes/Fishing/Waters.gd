@@ -122,7 +122,7 @@ func getFish(dict_list, id): # Sama kyk getFishes tapi buat list of dict ikan
 	for i in range(dict_list.size()):
 		if id in dict_list[i].values():
 			return dict_list[i]
-
+			
 # --- GETTER ---
 
 func getFishName(fish):

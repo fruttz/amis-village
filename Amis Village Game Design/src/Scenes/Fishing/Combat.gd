@@ -1,7 +1,6 @@
 extends Control
 
-var fish_list = Waters.getFishList("Sungai") #Ntar disesuaiin sama level
-var fish = Waters.getFish(fish_list, "02") #Ntar disesuaiin sama random chance
+onready var current_fish = get_parent().fish
 
 func catchWindow(x1, x2):
 	if $CombatBar.value >= x1 and $CombatBar.value <= x2:
@@ -10,7 +9,7 @@ func catchWindow(x1, x2):
 func catchDifficulty():
 	var window1 
 	var window2
-	match Waters.getFishDiff(fish):
+	match Waters.getFishDiff(current_fish):
 		1:
 			window1 = 40
 			window2 = 90
@@ -58,4 +57,6 @@ func _on_Timer_timeout(): #main function
 	if $CombatBar.value == $CombatBar.max_value:
 		catchFailed()
 
-			
+func startTimer():
+	$Timer.start()
+
