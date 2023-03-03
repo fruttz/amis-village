@@ -1,0 +1,64 @@
+{
+	"sungai": [{
+			"id": "sungai_01",
+			"fish_name": "Green Giant Carp",
+			"desc": "Funny carp, please catch",
+			"chance": 0.2
+		},
+		{
+			"id": "sungai_02",
+			"fish_name": "Crab",
+			"desc": "Funny crab, please catch",
+			"chance": 0.2
+		},
+		{
+			"id": "sungai_03",
+			"fish_name": "Fish",
+			"desc": "Funny fish, please catch",
+			"chance": 0.2
+		},
+		{
+			"id": "sungai_04",
+			"fish_name": "Name",
+			"desc": "Funny name, please catch",
+			"chance": 0.2
+		},
+		{
+			"id": "sungai_05",
+			"fish_name": "Teri",
+			"desc": "Funny teri, please catch",
+			"chance": 0.2
+		}
+	],
+	"laut": [{
+		"id": "laut_01",
+		"fish_name": "Red Giant Carp",
+		"desc": "Funny carp, please catch",
+		"chance": 0.2
+	},
+	{
+		"id": "laut_02",
+		"fish_name": "Crabbo",
+		"desc": "Funny crab, please catch",
+		"chance": 0.2
+	},
+	{
+		"id": "laut_03",
+		"fish_name": "Fishy",
+		"desc": "Funny fish, please catch",
+		"chance": 0.2
+	},
+	{
+		"id": "laut_04",
+		"fish_name": "Namey",
+		"desc": "Funny name, please catch",
+		"chance": 0.2
+	},
+	{
+		"id": "laut_05",
+		"fish_name": "Terit",
+		"desc": "Funny teri, please catch",
+		"chance": 0.2
+	}
+]
+}
