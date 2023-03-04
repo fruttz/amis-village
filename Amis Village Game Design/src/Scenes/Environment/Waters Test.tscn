@@ -18,6 +18,10 @@ water_name = "laut"
 position = Vector2( 245, 179 )
 water_name = "sungai"
 
+[node name="Area2D3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 433, 176 )
+water_name = "danau"
+
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
 [connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_exited"]
 [connection signal="entered" from="Area2D2" to="KinematicBody2D2" method="_on_Area2D2_entered"]
@@ -26,3 +30,7 @@ water_name = "sungai"
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
 [connection signal="entered" from="Area2D" to="KinematicBody2D2" method="_on_Area2D_entered"]
 [connection signal="exit" from="Area2D" to="KinematicBody2D2" method="_on_Area2D_exit"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
+[connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
+[connection signal="entered" from="Area2D3" to="KinematicBody2D2" method="_on_Area2D3_entered"]
+[connection signal="exit" from="Area2D3" to="KinematicBody2D2" method="_on_Area2D3_exit"]

@@ -33,7 +33,13 @@ func get_input():
 	if Input.is_action_just_released("ui_accept") and inProximity:
 	#		print(all[])
 		my_random_number = rng.randi_range(0, len(ImportData.fish_data[inProximity])-1)
-		print("You acquired "+ ImportData.fish_data[inProximity][my_random_number]["fish_name"])
+		var randomized_fish = ImportData.fish_data[inProximity][my_random_number]["fish_name"]
+		print("You acquired "+ randomized_fish)
+		PersuasionFish.curr_fish = ImportData.fish_data[inProximity][my_random_number]["id"]
+		PersuasionFish.curr_waters = inProximity
+		# for testing only
+		if randomized_fish == "Sussy" or randomized_fish == "Kepiting" or randomized_fish == "Tuna":
+			get_tree().change_scene("res://src/Scenes/Persuade/Persuade.tscn")
 #		print("you acquired "+ inProximity +" fish")
 	
 	
@@ -68,4 +74,16 @@ func _on_Area2D2_exit():
 func _on_Area2D_exit():
 	invertProx("left","")
 	print("keluar")
+	pass # Replace with function body.
+
+
+func _on_Area2D3_exit():
+	invertProx("left","")
+	print("keluar")
+	pass # Replace with function body.
+
+
+func _on_Area2D3_entered(water_name):
+	invertProx("entered", water_name)
+	print(water_name)
 	pass # Replace with function body.

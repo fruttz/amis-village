@@ -1,0 +1,25 @@
+{
+	"glossary": [
+
+	],
+	"variables": [
+		{
+			"id": "1677926656-787",
+			"name": "fish_01",
+			"type": 0,
+			"value": "Tuna"
+		},
+		{
+			"id": "1677929160-366",
+			"name": "fish_04",
+			"type": 0,
+			"value": "Kepiting"
+		},
+		{
+			"id": "1677929185-146",
+			"name": "fish_08",
+			"type": 0,
+			"value": "Sussy"
+		}
+	]
+}

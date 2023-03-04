@@ -39,3 +39,23 @@ func _on_Area2D2_body_exited(body):
 func _on_Area2D_body_exited(body):
 	emit_signal("exit")
 	pass # Replace with function body.
+
+
+func _on_Area2D3_entered(water_name):
+	emit_signal("entered", water_name)
+	pass # Replace with function body.
+
+
+func _on_Area2D3_exit():
+	emit_signal("exit")
+	pass # Replace with function body.
+
+
+func _on_Area2D3_body_entered(body):
+	emit_signal("entered", water_name)
+	pass # Replace with function body.
+
+
+func _on_Area2D3_body_exited(body):
+	emit_signal("exit")
+	pass # Replace with function body.
