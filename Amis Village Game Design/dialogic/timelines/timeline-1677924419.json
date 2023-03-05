@@ -24,7 +24,7 @@
 			"character": "character-1677905391.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Nice crab."
+			"text": "Nice crab [test]."
 		},
 		{
 			"character": "character-1677994898.json",
@@ -58,7 +58,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You acquired [fish_04]"
+			"text": "You acquired Kepiting"
 		},
 		{
 			"emit_signal": "success",

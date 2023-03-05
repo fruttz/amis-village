@@ -1,8 +1,8 @@
 {
 	"color": "#ffffffff",
 	"description": "Crabbo",
-	"display_name": "Kepiting",
-	"display_name_bool": true,
+	"display_name": "Blue Tang",
+	"display_name_bool": false,
 	"id": "character-1677926734.json",
 	"mirror_portraits": true,
 	"name": "Blue Tang",

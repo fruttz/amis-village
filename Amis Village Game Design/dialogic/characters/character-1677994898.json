@@ -4,18 +4,18 @@
 	"display_name": "",
 	"display_name_bool": false,
 	"id": "character-1677994898.json",
-	"mirror_portraits": false,
+	"mirror_portraits": true,
 	"name": "Kepiting",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": 0,
+	"offset_y": 400,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://src/Assets/8nzuofyehti71.png"
 		}
 	],
-	"scale": 100,
+	"scale": 46,
 	"theme": ""
 }
