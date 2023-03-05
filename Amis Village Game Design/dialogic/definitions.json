@@ -20,6 +20,12 @@
 			"name": "fish_08",
 			"type": 0,
 			"value": "Sussy"
+		},
+		{
+			"id": "1678004423-785",
+			"name": "current_fish",
+			"type": 0,
+			"value": "string"
 		}
 	]
 }

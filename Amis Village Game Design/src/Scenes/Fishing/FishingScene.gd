@@ -25,4 +25,28 @@ func randomCatch():
 	
 	return current_fish
 
+func startCombat():
+	$Combat.visible = true
+	$Combat.startTimer()
+
+func startPersuade():
+	$Persuade.persuade()
+
+func choice(param):
+	match param:
+		"combat":
+			startCombat()
+		"persuade":
+			startPersuade()
+		_:
+			pass
+		
+
+func _ready():
+	var dialog = Dialogic.start("initial_choice")
+	var current_fish = Dialogic.set_variable("current_fish", fish["fish_name"])
+	dialog.pause_mode = PAUSE_MODE_PROCESS
+	dialog.connect("dialogic_signal", self, "choice")
+	add_child(dialog)
+
 
