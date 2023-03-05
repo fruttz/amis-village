@@ -5,6 +5,7 @@ extends Node
 # var a = 2
 # var b = "text"
 
+var curr_fish
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,8 +13,10 @@ func _ready():
 	pass # Replace with function body.
 
 func persuade():
-	print(PersuasionFish.curr_fish+"_persuade")
-	var dialog = Dialogic.start(PersuasionFish.curr_fish+"_persuade")
+	curr_fish = get_parent().fish
+	print(curr_fish["fish_name"]+"_persuade")
+#	var dialog = Dialogic.start(curr_fish["fish_name"]+"_persuade")
+	var dialog = Dialogic.start("Kepiting_persuade")
 	dialog.pause_mode = PAUSE_MODE_PROCESS
 #	var dialog = Dialogic.start("fish_01_persuade")
 #	dialog.connect("timeline_end",self,"end_dialog")
@@ -26,8 +29,8 @@ func persuade():
 func result_fish(param):
 	if param == "success":
 		# increase fish function
-		print("Got "+PersuasionFish.curr_fish)
+		Inventory.updateAffection(curr_fish, 1)
 	else:
-		print("You failed to catch "+PersuasionFish.curr_fish)
+		print("You failed to catch "+curr_fish)
 	get_tree().change_scene("res://src/Scenes/Environment/Waters Test.tscn")
 	pass
