@@ -32,14 +32,7 @@ func get_input():
 	
 	if Input.is_action_just_released("ui_accept") and inProximity:
 	#		print(all[])
-		my_random_number = rng.randi_range(0, len(ImportData.fish_data[inProximity])-1)
-		var randomized_fish = ImportData.fish_data[inProximity][my_random_number]["fish_name"]
-		print("You acquired "+ randomized_fish)
-		PersuasionFish.curr_fish = ImportData.fish_data[inProximity][my_random_number]["id"]
-		PersuasionFish.curr_waters = inProximity
-		# for testing only
-		if randomized_fish == "Sussy" or randomized_fish == "Kepiting" or randomized_fish == "Tuna":
-			get_tree().change_scene("res://src/Scenes/Persuade/Persuade.tscn")
+		get_tree().change_scene("res://src/Scenes/Fishing/FishingScene.tscn")
 #		print("you acquired "+ inProximity +" fish")
 	
 	
