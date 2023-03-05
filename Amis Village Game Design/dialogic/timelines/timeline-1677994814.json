@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1677926734.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is a test"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677994814.json",
+		"name": "Blue Tang_persuade"
+	}
+}

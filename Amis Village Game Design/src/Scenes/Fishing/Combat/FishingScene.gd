@@ -22,7 +22,7 @@ func randomCatch():
 			break
 		else:
 			offset += fish_list[i]["rarity"]
-	
+	print(current_fish)
 	return current_fish
 
 

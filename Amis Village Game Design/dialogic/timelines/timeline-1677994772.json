@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1677994902.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is a test"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677994772.json",
+		"name": "Gurita_persuade"
+	}
+}

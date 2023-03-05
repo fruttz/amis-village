@@ -58,6 +58,14 @@
 			"rarity": 3,
 			"difficulty": 4,
 			"affection": 5
+        },
+		{
+            "id":"04",
+			"fish_name":"Blue Tang",
+			"desc": "Blue Tang Lucu",
+			"rarity": 5,
+			"difficulty": 5,
+			"affection": 6
         }
     ],
     "danau": [

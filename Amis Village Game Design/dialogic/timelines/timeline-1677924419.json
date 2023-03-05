@@ -5,7 +5,7 @@
 			"animation_length": 0,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
-			"character": "character-1677926734.json",
+			"character": "character-1677994898.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
 			"portrait": "Default",
@@ -27,7 +27,7 @@
 			"text": "Nice crab."
 		},
 		{
-			"character": "character-1677926734.json",
+			"character": "character-1677994898.json",
 			"event_id": "dialogic_001",
 			"portrait": "Default",
 			"text": "Oh no"
@@ -49,7 +49,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1677926734.json",
+			"character": "character-1677994898.json",
 			"event_id": "dialogic_001",
 			"portrait": "Default",
 			"text": "..."
@@ -88,6 +88,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1677924419.json",
-		"name": "fish_04_persuade"
+		"name": "Kepiting_persuade"
 	}
 }
