@@ -84,6 +84,11 @@ config/name="Amis Village Game Design"
 run/main_scene="res://src/Scenes/Fishing/FishScene.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+ImportData="*res://src/Scenes/Environment/data/ImportData.gd"
+PersuasionFish="*res://src/Scenes/Persuade/PersuasionFish.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
