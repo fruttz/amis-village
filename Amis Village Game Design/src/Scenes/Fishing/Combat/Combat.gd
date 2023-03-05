@@ -9,24 +9,21 @@ func catchWindow(x1, x2):
 func catchDifficulty():
 	var window1 
 	var window2
-	match Waters.getFishDiff(current_fish):
-		1:
-			window1 = 40
-			window2 = 90
-		2:
-			window1 = 50
-			window2 = 90
-		3:
-			window1 = 60
-			window2 = 90
-		4:
-			window1 = 70
-			window2 = 90
-		5:
-			window1 = 80
-			window2 = 90
-		_:
-			pass
+	if current_fish["difficulty"] == 1:
+		window1 = 40
+		window2 = 90
+	elif current_fish["difficulty"] == 2:
+		window1 = 50
+		window2 = 90
+	elif current_fish["difficulty"] == 3:
+		window1 = 60
+		window2 = 90
+	elif current_fish["difficulty"] == 4:
+		window1 = 70
+		window2 = 90
+	elif current_fish["difficulty"] == 5:
+		window1 = 80
+		window2 = 90
 			
 	return [window1, window2]
 
@@ -60,3 +57,5 @@ func _on_Timer_timeout(): #main function
 func startTimer():
 	$Timer.start()
 
+func _ready():
+	startTimer()

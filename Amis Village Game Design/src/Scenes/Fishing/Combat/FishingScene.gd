@@ -3,7 +3,7 @@ extends Node
 var random = RandomNumberGenerator.new()
 
 # Initialize fish
-var fish_list = Waters.getFishList("Laut") #Ntar disesuaiin sama level
+var fish_list = ImportData.getFishList("laut") #Ntar disesuaiin sama level
 var fish = randomCatch()
 
 func randomCatch():
@@ -24,3 +24,5 @@ func randomCatch():
 			offset += fish_list[i]["rarity"]
 	
 	return current_fish
+
+

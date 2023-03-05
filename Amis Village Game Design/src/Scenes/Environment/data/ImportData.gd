@@ -4,20 +4,40 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var fish_data
+
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func parseData():
 	var f = File.new()
 	f.open("res://src/Scenes/Environment/data/fishes.json", File.READ)
 	var j = JSON.parse(f.get_as_text())
 	
 	f.close()
-	fish_data = j.result
-#	print(fish_data)
-	pass # Replace with function body.
+	var data = j.result
+	return data
 
+func getFishList(waterName): # Iterate list of dict sampe nemu list of dict (ikan) yang sesuai sama waterName
+	var fish_data = parseData()
+	return fish_data[waterName]
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func getFish(dict_list, id): # Sama kyk getFishes tapi buat list of dict ikan
+	for i in range(dict_list.size()):
+		if id in dict_list[i].values():
+			return dict_list[i]
+
+# --- GETTER ---
+
+func getFishName(fish):
+	return fish["fish_name"]
+
+func getFishDesc(fish):
+	return fish["desc"]
+
+func getFishRar(fish):
+	return fish["rarity"]
+
+func getFishDiff(fish):
+	return fish["difficulty"]
+
+func getFishAff(fish):
+	return fish["affection"]
