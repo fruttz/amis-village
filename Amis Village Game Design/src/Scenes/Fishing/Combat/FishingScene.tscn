@@ -8,7 +8,6 @@
 script = ExtResource( 2 )
 
 [node name="Combat" type="Control" parent="."]
-visible = false
 margin_right = 537.0
 margin_bottom = 241.0
 script = ExtResource( 1 )
