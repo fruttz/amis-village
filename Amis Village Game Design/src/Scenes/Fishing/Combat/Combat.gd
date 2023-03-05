@@ -1,6 +1,7 @@
 extends Control
 
 onready var current_fish = get_parent().fish
+var window_tint = Color.red.lightened(0.2)
 
 func catchWindow(x1, x2):
 	if $CombatBar.value >= x1 and $CombatBar.value <= x2:
@@ -28,15 +29,21 @@ func catchDifficulty():
 	return [window1, window2]
 
 func catchIndicator():
-	print("Catch") 
+	$CombatBar.set_tint_progress(window_tint)
 	
 func catchSuccess():
-	print("Catch Success")
+	var dialog = Dialogic.start("catch_success")
+	dialog.connect("dialogic_signal",self,"close")
+	add_child(dialog)
 	$Timer.stop()
+	self.visible = false
 
 func catchFailed():
-	print("Catch Failed")
+	var dialog = Dialogic.start("catch_failed")
+	dialog.connect("dialogic_signal",self,"close")
+	add_child(dialog)
 	$Timer.stop()
+	self.visible = false
 		
 
 func _on_Timer_timeout(): #main function
@@ -53,9 +60,11 @@ func _on_Timer_timeout(): #main function
 	# if button not pressed
 	if $CombatBar.value == $CombatBar.max_value:
 		catchFailed()
+	
 
 func startTimer():
 	$Timer.start()
 
-func _ready():
-	startTimer()
+func close(param):
+	if param == "close":
+		get_tree().change_scene("res://src/Scenes/Environment/Waters Test.tscn")
