@@ -6,9 +6,10 @@ signal fish2
 var velocity = Vector2()
 var inProximity = ""
 
-var currentFishes
-var rng = RandomNumberGenerator.new()
-var my_random_number
+var affection = {}
+
+
+
 
 func invertProx(action, water_name):
 	if action == "entered":
@@ -16,6 +17,7 @@ func invertProx(action, water_name):
 	elif action == "left":
 		inProximity = ""
 	print(inProximity)
+	
 		
 
 func get_input():
