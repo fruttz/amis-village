@@ -30,7 +30,6 @@ func result_fish(param):
 	if param == "success":
 		# increase fish function
 		Inventory.updateAffection(curr_fish, 1)
-	else:
-		print("You failed to catch "+curr_fish)
+		
 	get_tree().change_scene("res://src/Scenes/Environment/Waters Test.tscn")
 	pass

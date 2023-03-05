@@ -30,7 +30,7 @@ func get_input():
 		velocity.y += 1
 	velocity = velocity.normalized() * movementSpeed
 	
-	if Input.is_action_just_released("ui_accept") and inProximity:
+	if Input.is_action_just_released("game_action") and inProximity:
 	#		print(all[])
 		get_tree().change_scene("res://src/Scenes/Fishing/FishingScene.tscn")
 #		print("you acquired "+ inProximity +" fish")

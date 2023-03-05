@@ -32,6 +32,7 @@ func startCombat():
 func startPersuade():
 	$Persuade.persuade()
 
+
 func choice(param):
 	match param:
 		"combat":
@@ -40,7 +41,7 @@ func choice(param):
 			startPersuade()
 		_:
 			pass
-		
+
 
 func _ready():
 	var dialog = Dialogic.start("initial_choice")
