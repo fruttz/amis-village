@@ -1,7 +1,22 @@
 extends KinematicBody2D
 
 export var movementSpeed = 200
+signal fish1
+signal fish2
 var velocity = Vector2()
+var inProximity = ""
+
+var currentFishes
+var rng = RandomNumberGenerator.new()
+var my_random_number
+
+func invertProx(action, water_name):
+	if action == "entered":
+		inProximity = water_name
+	elif action == "left":
+		inProximity = ""
+	print(inProximity)
+		
 
 func get_input():
 	velocity = Vector2.ZERO
@@ -14,9 +29,61 @@ func get_input():
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1
 	velocity = velocity.normalized() * movementSpeed
+	
+	if Input.is_action_just_released("ui_accept") and inProximity:
+	#		print(all[])
+		my_random_number = rng.randi_range(0, len(ImportData.fish_data[inProximity])-1)
+		var randomized_fish = ImportData.fish_data[inProximity][my_random_number]["fish_name"]
+		print("You acquired "+ randomized_fish)
+		PersuasionFish.curr_fish = ImportData.fish_data[inProximity][my_random_number]["id"]
+		PersuasionFish.curr_waters = inProximity
+		# for testing only
+		if randomized_fish == "Sussy" or randomized_fish == "Kepiting" or randomized_fish == "Tuna":
+			get_tree().change_scene("res://src/Scenes/Persuade/Persuade.tscn")
+#		print("you acquired "+ inProximity +" fish")
+	
+	
+	
+		
 
 func _physics_process(delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+	
 
 
+func _on_Area2D2_entered(water_name):
+	invertProx("entered", water_name)
+#	currentFishes = 
+	print(water_name)
+	pass # Replace with function body.
+
+
+func _on_Area2D_entered(water_name):
+	invertProx("entered", water_name)
+	print(water_name)
+	pass # Replace with function body.
+
+
+func _on_Area2D2_exit():
+	invertProx("left","")
+	print("keluar")
+	pass # Replace with function body.
+
+
+func _on_Area2D_exit():
+	invertProx("left","")
+	print("keluar")
+	pass # Replace with function body.
+
+
+func _on_Area2D3_exit():
+	invertProx("left","")
+	print("keluar")
+	pass # Replace with function body.
+
+
+func _on_Area2D3_entered(water_name):
+	invertProx("entered", water_name)
+	print(water_name)
+	pass # Replace with function body.

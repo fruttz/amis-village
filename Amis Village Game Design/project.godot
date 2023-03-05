@@ -86,7 +86,11 @@ config/icon="res://icon.png"
 
 [autoload]
 
+
 Waters="*res://src/Scenes/Fishing/Waters.gd"
+ImportData="*res://src/Scenes/Environment/data/ImportData.gd"
+PersuasionFish="*res://src/Scenes/Persuade/PersuasionFish.gd"
+
 
 [editor_plugins]
 
