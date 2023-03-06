@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Asset 11@1.5x.png-c23ab558e02f6db50e5b456ed4332ff9.stex"
+path="res://.import/Asset 10@1.5x.png-21ef5607802ffbbcdbaa96baa22bf14f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Assets/Asset 11@1.5x.png"
-dest_files=[ "res://.import/Asset 11@1.5x.png-c23ab558e02f6db50e5b456ed4332ff9.stex" ]
+source_file="res://src/Assets/Fishing/Asset 10@1.5x.png"
+dest_files=[ "res://.import/Asset 10@1.5x.png-21ef5607802ffbbcdbaa96baa22bf14f.stex" ]
 
 [params]
 
