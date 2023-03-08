@@ -7,7 +7,7 @@
 
 			],
 			"portrait": "",
-			"question": "Oh hey! There is a [current_fish] on the line!  "
+			"question": "Oh hey! There is a fish on the line!  "
 		},
 		{
 			"choice": "Persuade",

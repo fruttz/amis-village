@@ -4,22 +4,18 @@
 	"display_name": "Tuna",
 	"display_name_bool": true,
 	"id": "character-1677905316.json",
-	"mirror_portraits": true,
+	"mirror_portraits": false,
 	"name": "Kepiting",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": 400,
+	"offset_y": 75,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://src/Assets/8nzuofyehti71.png"
-		},
-		{
-			"name": "artworks-IPaKZoHBWF4rungk-tHhy2A-t500x500",
-			"path": "res://src/Assets/artworks-IPaKZoHBWF4rungk-tHhy2A-t500x500.png"
+			"path": "res://src/Assets/Fish/ikan tuna.png"
 		}
 	],
-	"scale": 46,
+	"scale": 15,
 	"theme": ""
 }
