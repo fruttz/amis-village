@@ -11,18 +11,23 @@ func catchDifficulty():
 	var window1 
 	var window2
 	if current_fish["difficulty"] == 1:
+		$Timer.set_wait_time(0.05)
 		window1 = 40
 		window2 = 90
 	elif current_fish["difficulty"] == 2:
+		$Timer.set_wait_time(0.04)
 		window1 = 50
 		window2 = 90
 	elif current_fish["difficulty"] == 3:
+		$Timer.set_wait_time(0.03)
 		window1 = 60
 		window2 = 90
 	elif current_fish["difficulty"] == 4:
+		$Timer.set_wait_time(0.02)
 		window1 = 70
 		window2 = 90
 	elif current_fish["difficulty"] == 5:
+		$Timer.set_wait_time(0.01)
 		window1 = 80
 		window2 = 90
 			

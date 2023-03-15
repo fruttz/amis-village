@@ -4,7 +4,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Congratulations! You caught the fish!"
+			"text": "Congratulations! You caught the [current_fish]!"
 		},
 		{
 			"emit_signal": "close",

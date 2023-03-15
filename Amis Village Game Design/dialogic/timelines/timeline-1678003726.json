@@ -4,7 +4,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Too bad! The fish got away"
+			"text": "Too bad! The [current_fish] got away"
 		},
 		{
 			"emit_signal": "close",

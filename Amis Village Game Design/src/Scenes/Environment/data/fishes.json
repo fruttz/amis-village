@@ -4,7 +4,7 @@
             "id": "01",
 			"fish_name": "Kecebong",
 			"desc": "Kecebong lucu",
-			"rarity": 1,
+			"rarity": 5,
 			"difficulty": 1,
 			"affection": 3
         },
@@ -20,7 +20,7 @@
             "id": "03",
 			"fish_name": "Arwana",
 			"desc": "Arwana lucu",
-			"rarity": 2,
+			"rarity": 4,
 			"difficulty": 2,
 			"affection": 4
         },
@@ -39,7 +39,7 @@
             "id": "01",
 			"fish_name": "Tuna",
 			"desc": "Tuna lucu",
-			"rarity": 1,
+			"rarity": 5,
 			"difficulty": 1,
 			"affection": 3
         },
@@ -47,7 +47,7 @@
             "id":"02",
 			"fish_name":"Gurita",
 			"desc":"Gurita lucu",
-			"rarity": 4,
+			"rarity": 2,
 			"difficulty": 5,
 			"affection": 5
         },
@@ -63,7 +63,7 @@
             "id":"04",
 			"fish_name":"Blue Tang",
 			"desc": "Blue Tang lucu",
-			"rarity": 5,
+			"rarity": 1,
 			"difficulty": 5,
 			"affection": 6
         }
@@ -73,7 +73,7 @@
             "id": "01",
 			"fish_name": "Kecebong",
 			"desc": "Kecebong lucu",
-			"rarity": 1,
+			"rarity": 5,
 			"difficulty": 1,
 			"affection": 3
         },
@@ -89,7 +89,7 @@
             "id": "03",
 			"fish_name": "Arwana",
 			"desc": "Arwana lucu",
-			"rarity": 2,
+			"rarity": 4,
 			"difficulty": 2,
 			"affection": 4
         },
