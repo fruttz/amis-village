@@ -16,7 +16,7 @@ func persuade():
 	curr_fish = get_parent().fish
 	print(curr_fish["fish_name"]+"_persuade")
 #	var dialog = Dialogic.start(curr_fish["fish_name"]+"_persuade")
-	var dialog = Dialogic.start("Kepiting_persuade")
+	var dialog = Dialogic.start(str(Inventory.affection[ImportData.getFishName(curr_fish)])+"_persuade")
 	dialog.pause_mode = PAUSE_MODE_PROCESS
 #	var dialog = Dialogic.start("fish_01_persuade")
 #	dialog.connect("timeline_end",self,"end_dialog")
