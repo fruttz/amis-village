@@ -8,6 +8,18 @@
 			"name": "current_fish",
 			"type": 0,
 			"value": "string"
+		},
+		{
+			"id": "1679209385-787",
+			"name": "fish_portrait",
+			"type": 0,
+			"value": "Tuna"
+		},
+		{
+			"id": "1679203790-648",
+			"name": "player_name",
+			"type": 0,
+			"value": "Nguyen"
 		}
 	]
 }
