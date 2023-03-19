@@ -36,7 +36,8 @@ func get_input():
 #		print("you acquired "+ inProximity +" fish")
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
-		print(collision.collider)
+		if collision.collider.is_in_group("border"):
+			print("Kamu menabrak dinding")
 	
 	
 	
