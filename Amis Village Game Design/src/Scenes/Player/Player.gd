@@ -34,6 +34,9 @@ func get_input():
 	#		print(all[])
 		get_tree().change_scene("res://src/Scenes/Fishing/FishingScene.tscn")
 #		print("you acquired "+ inProximity +" fish")
+	for i in get_slide_count():
+		var collision = get_slide_collision(i)
+		print(collision.collider)
 	
 	
 	
