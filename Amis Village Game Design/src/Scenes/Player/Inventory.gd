@@ -15,7 +15,7 @@ func _ready():
 	for i in waters:
 		var fish_list = ImportData.getFishList(i)
 		for j in fish_list:
-			affection[j["fish_name"]] = 6
+			affection[j["fish_name"]] = 0
 	
 	for key in affection:
 		inventory[key] = affection[key]
