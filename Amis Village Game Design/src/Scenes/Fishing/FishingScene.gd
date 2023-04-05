@@ -3,10 +3,11 @@ extends Node
 var random = RandomNumberGenerator.new()
 
 # Initialize fish
-var fish_list = ImportData.getFishList("laut") #Ntar disesuaiin sama level
+var fish_list = ImportData.getFishList(GlobalVar.fishingWater) #Ntar disesuaiin sama level
 var fish = randomCatch()
 
 func randomCatch():
+#	print("you are fishing in " + GlobalVar.fishingWater)
 	random.randomize()
 	var current_fish
 	var total_chance = 0

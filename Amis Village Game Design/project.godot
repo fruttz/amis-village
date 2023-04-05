@@ -88,6 +88,7 @@ config/icon="res://icon.png"
 
 ImportData="*res://src/Scenes/Environment/data/ImportData.gd"
 Inventory="*res://src/Scenes/Player/Inventory.gd"
+GlobalVar="*res://src/Scenes/Environment/data/GlobalVar.gd"
 
 [editor_plugins]
 

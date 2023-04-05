@@ -32,6 +32,7 @@ func get_input():
 	
 	if Input.is_action_just_released("game_action") and inProximity:
 	#		print(all[])
+		GlobalVar.fishingWater = inProximity
 		get_tree().change_scene("res://src/Scenes/Fishing/FishingScene.tscn")
 #		print("you acquired "+ inProximity +" fish")
 	for i in get_slide_count():
