@@ -1,11 +1,11 @@
 {
 	"color": "#ffffffff",
 	"description": "",
-	"display_name": "",
-	"display_name_bool": false,
+	"display_name": "current_fish",
+	"display_name_bool": true,
 	"id": "character-1678007686.json",
 	"mirror_portraits": false,
-	"name": "Kecebong",
+	"name": "current fish",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -13,7 +13,11 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://src/Assets/Fish/ikan tuna.png"
+		},
+		{
+			"name": "Tuna",
+			"path": "res://src/Assets/Fish/ikan tuna.png"
 		}
 	],
 	"scale": 100,

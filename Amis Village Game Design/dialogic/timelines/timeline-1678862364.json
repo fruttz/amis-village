@@ -1,10 +1,765 @@
 {
 	"events": [
 		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"port_defn": "1679209385-787",
+			"portrait": "[Definition]",
+			"question": "Hmph, siapa kamu?"
+		},
+		{
+			"choice": "Oh, aku [player_name]",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aku engga pernah ngelihat kamu di sekitar sini deh. Sana pergi, mama aku nyuruh jauh-jauh dari orang ngga dikenal, aku lagi males."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jangan gitu dong, aku kan ingin kenalan denganmu."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Buat apa?"
+		},
+		{
+			"choice": "Aku ingin mengenal semua hewan di perairan.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Memangnya untuk apa kamu mengenal semua hewan di perairan?"
+		},
+		{
+			"choice": "Aku memang suka mempelajari hal baru tahu!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Iseng saja, karena aku terlanjur tinggal di sini tidak ada salahnya kalau aku mempelajari itu.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah kamu mengingatkanku ke Tatang sahabatku yang hobinya berkelana hingga ke Laut Hitam, kamu menarik sekali. Baiklah ayo mengobrol lebih dalam"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is 0 persuade"
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama bersama."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Kamu hewan air yang paling menarik yang pernah aku lihat, jadi aku ingin mengenalmu lebih dalam",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ah kamu bisa saja. Memangnya apa yang membuatmu tertarik denganku?"
+		},
+		{
+			"choice": "Aku sebenarnya tertarik dengan semua hewan air sih, jadi aku juga pasti tertarik denganmu",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, ternyata aku tidak spesial ya. Aku kira ada perbedaan antara aku dan hewan air yang lain."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tentu saja ada! Semua makhluk hidup spesial dengan cara mereka masing-masing. Jadi menurutku, kamu juga spesial!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Benarkah? Kamu … keren sekali. Baiklah, aku juga jadi sedikit tertarik denganmu. Mari kita berbicara lebih lama lagi."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama bersama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Tentu saja kepribadianmu!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Loh, kita kan baru bertemu. Memang kamu tahu kepribadianku dari mana?"
+		},
+		{
+			"choice": "Aku keturunan dukun",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HAAAHHH???? Aku tidak percaya dengan ilmu hitam! Pergi sana"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "E-eh … a-aku cuma bercanda"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh? Benarkah begitu? HAHAHAHAHAHA kamu ternyata orang yang lucu HAHAHAHA."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh? Hehe … iya? Ah, hahahaha …"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HAHAHAHAHA aku suka orang yang lucu, ayo kita menghabiskan waktu bersama HAHAHAHAHA"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hahaha …"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Iya sih, tapi kamu terlihat seperti [current_fish] yang punya kepribadian menarik",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jangan terlalu memaksakan diri untuk mencari-cari alasan, aku lebih suka orang yang jujur. Baiklah, mungkin tidak ada salahnya mengenal orang baru. Mari berbicara lebih lama lagi."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Tebak",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hah? Kamu orang sini? Aku tahu semua orang di sini loh, kok aku belum tahu kamu?"
+		},
+		{
+			"choice": "Makanya, coba tebak dulu. Aku kasih 2 kesempatan",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Kamu menarik … baiklah, apakah kamu si Agus? Aku sudah jarang melihatnya di sekitar sini."
+		},
+		{
+			"choice": "Salah :D",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Ayo 1 kesempatan lagi.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hmm, aku kira …. Oh! Kamu Tatang kan?"
+		},
+		{
+			"choice": "Benar! (dibenarkan karena kasihan udah salah nebak 2x)",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Tatang? Kamu benar Tatang? A-Aku … kangen sekali denganmu, kamu betul Tatang sahabatku dari desa sebelah yang sering berkelana hingga Laut Hitam kan? Aku pangling loh! Apa kamu pernah bertemu dengan ikan Kod Murray di sana?"
+		},
+		{
+			"choice": "Pernah dong!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kamu bohong, tuh. Ikan Kod Murray itu temanku yang cuma tinggal di Australia. Pergi sana, jangan buang-buang waktuku!"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aku tidak tahu itu karena aku Tatang yang lain, namaku tuh [player_name] Tatang tahu!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kamu tidak terlihat seperti seseorang yang bernama Tatang sama sekali, tuh"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Loh kamu kan tidak bisa menggeneralisasi semua Tatang begitu."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul juga, sih. Sepertinya aku juga perlu memperluas relasi sehingga tidak menggeneralisasi nama Tatang lagi. Aku minta maaf, ayo kita mengobrol lebih lama agar saling mengenal."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Mu-Murray apa? A-aku sepertinya belum pernah dengar",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tatang yang aku tahu kenal dengan seisi perairan. Kamu bukan Tatang, hush!"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jangan usir aku, dong! Kan bisa jadi aku Tatang yang berbeda dari yang kamu kenal! Aku janji bakal belajar soal ikan dan hewan laut lain lebih dalam seperti Tatang sahabatmu, deh!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Baiklah, aku senang memiliki teman baru yang juga memiliki ketertarikan yang sama dengan Tatang sahabatku. Memangnya kamu siapa?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kamu bisa mengenalku lebih dalam kalau kita mengobrol"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul juga, karena kamu menarik aku akan mengizinkanmu mengobrol lebih lama denganku, deh."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Wah, sayang sekali. Masih salah.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh lalu kamu siapa sebenarnya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aku sudah bilang ‘kan kalau kamu perlu menebak."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ya sudah, beri aku satu kesempatan lagi, deh! Janji aku akan menebak dengan betul kali ini."
+		},
+		{
+			"choice": "Tidak mau, lebih baik kita berbincang lagi saja biar kamu mengenalku",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hah bisa-bisanya kamu membuatku penasaran. A-aku … seharusnya aku mengenal seluruh orang di desa ini. Tapi kamu … Baiklah, aku jadi sedikit tertarik denganmu. Mari kita berbicara lebih lama lagi."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Ah, mana mungkin kamu bisa.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hari ini kamu bukan hanya membuatku marah karena buang-buang waktuku tapi juga meremehkanku ya? Dasar orang asing tidak jelas, pergi sana!"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh tunggu dulu, aku sebenarnya sangat tertarik denganmu. Memang tidak boleh ya kalau kita berkenalan dengan mengobrol lebih lama saja?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hah bisa-bisanya kamu bicara begitu setelah membuatku marah. Kamu juga membuatku sadar akan sesuatu … a-aku … seharusnya aku mengenal seluruh orang di desa ini. Tapi kamu … Baiklah, aku jadi sedikit tertarik denganmu. Mari kita berbicara lebih lama lagi"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Sebenarnya aku bukan orang sini, hehe",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Halah nipu-nipu aja. Sudah sana jangan habiskan waktuku! Aku tidak mau mengobrol dengan orang asing!"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jangan gitu dong, aku kan ingin kenalan denganmu"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Buat apa?"
+		},
+		{
+			"choice": "Aku ingin mengenal semua hewan di perairan",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Memangnya untuk apa kamu mengenal semua hewan di perairan?"
+		},
+		{
+			"choice": "Aku memang suka mempelajari hal baru tahu!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Iseng saja, karena aku terlanjur tinggal di sini tidak ada salahnya kalau aku mempelajari itu.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah kamu mengingatkanku ke Tatang sahabatku yang hobinya berkelana hingga ke Laut Hitam, kamu menarik sekali. Baiklah ayo mengobrol lebih dalam"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama bersama."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Kamu hewan air yang paling menarik yang pernah aku lihat, jadi aku ingin mengenalmu lebih dalam",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ah kamu bisa saja. Memangnya apa yang membuatmu tertarik denganku?"
+		},
+		{
+			"choice": "Aku sebenarnya tertarik dengan semua hewan air sih, jadi aku juga pasti tertarik denganmu.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, ternyata aku tidak spesial ya. Aku kira ada perbedaan antara aku dan hewan air yang lain"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tentu saja ada! Semua makhluk hidup spesial dengan cara mereka masing-masing. Jadi menurutku, kamu juga spesial!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Benarkah? Kamu … keren sekali. Baiklah, aku juga jadi sedikit tertarik denganmu. Mari kita berbicara lebih lama lagi."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Tentu saja kepribadianmu!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Loh, kita kan baru bertemu. Memang kamu tahu kepribadianku dari mana?"
+		},
+		{
+			"choice": "Aku keturunan dukun.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HAAAHHH???? Aku tidak percaya dengan ilmu hitam! Pergi sana!"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "E-eh … a-aku cuma bercanda."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh? Benarkah begitu? HAHAHAHAHAHA kamu ternyata orang yang lucu HAHAHAHA."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh? Hehe … iya? Ah, hahahaha …"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HAHAHAHAHA aku suka orang yang lucu, ayo kita menghabiskan waktu bersama HAHAHAHAHA."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hahaha …"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Iya sih, tapi kamu terlihat seperti ____ (nama ikan) yang punya kepribadian menarik.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jangan terlalu memaksakan diri untuk mencari-cari alasan, aku lebih suka orang yang jujur. Baiklah, mungkin tidak ada salahnya mengenal orang baru. Mari berbicara lebih lama lagi."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut berbincang dan menghabiskan waktu yang cukup lama"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"emit_signal": "success",
