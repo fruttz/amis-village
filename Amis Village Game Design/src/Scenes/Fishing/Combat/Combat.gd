@@ -1,6 +1,7 @@
 extends Control
 
 onready var current_fish = get_parent().fish
+var normal_tint = Color.aquamarine.lightened(0.2)
 var window_tint = Color.red.lightened(0.2)
 
 func catchWindow(x1, x2):
@@ -33,8 +34,12 @@ func catchDifficulty():
 			
 	return [window1, window2]
 
-func catchIndicator():
+func catchIndicatorTrue():
 	$CombatBar.set_tint_progress(window_tint)
+
+func catchIndicatorFalse():
+	$CombatBar.set_tint_progress(normal_tint)
+
 	
 func catchSuccess():
 	var dialog = Dialogic.start("catch_success")
@@ -55,7 +60,9 @@ func _on_Timer_timeout(): #main function
 	var windows = catchDifficulty()
 	$CombatBar.value += 1
 	if catchWindow(windows[0], windows[1]):
-		catchIndicator()
+		catchIndicatorTrue()
+	else:
+		catchIndicatorFalse()
 	# Check timing
 	if Input.is_action_pressed("game_action"): # game_action -> "E" key
 		if catchWindow(windows[0], windows[1]):
