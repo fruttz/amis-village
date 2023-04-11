@@ -81,13 +81,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Amis Village Game Design"
-run/main_scene="res://src/Scenes/Environment/Waters Test.tscn"
+run/main_scene="res://src/Scenes/Environment/BeachScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 ImportData="*res://src/Scenes/Environment/data/ImportData.gd"
 Inventory="*res://src/Scenes/Player/Inventory.gd"
+GlobalPosition="*res://src/Scenes/Environment/GlobalPosition.gd"
 
 [editor_plugins]
 
