@@ -79,4 +79,5 @@ func startTimer():
 
 func close(param):
 	if param == "close":
-		get_tree().change_scene("res://src/Scenes/Environment/Waters Test.tscn")
+		get_tree().paused = false
+		

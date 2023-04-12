@@ -32,7 +32,7 @@ func get_input():
 	
 	if Input.is_action_just_released("game_action") and inProximity:
 	#		print(all[])
-		get_tree().change_scene("res://src/Scenes/Fishing/FishingScene.tscn")
+		$"../Fishing".start()
 #		print("you acquired "+ inProximity +" fish")
 	
 	
@@ -80,4 +80,7 @@ func _on_Area2D3_entered(water_name):
 	invertProx("entered", water_name)
 	print(water_name)
 	pass # Replace with function body.
+
+
+
 

@@ -43,7 +43,8 @@ func choice(param):
 			pass
 
 
-func _ready():
+func start():
+	get_tree().paused = true
 	var dialog = Dialogic.start("initial_choice")
 	var current_fish = Dialogic.set_variable("current_fish", fish["fish_name"])
 	dialog.pause_mode = PAUSE_MODE_PROCESS
