@@ -47,6 +47,7 @@ position = Vector2( 990, 278 )
 position = Vector2( 19, 252 )
 
 [node name="Fishing" parent="." instance=ExtResource( 6 )]
+pause_mode = 2
 
 [connection signal="body_entered" from="LevelBorderLake" to="LevelBorderLake" method="_on_LevelBorderLake_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach" to="LevelBorderBeach" method="_on_LevelBorderBeach_body_entered"]
