@@ -13,7 +13,7 @@ extents = Vector2( 23.25, 230.5 )
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 501, 325 )
+position = Vector2( 721, 377 )
 
 [node name="LevelBorderVillage" type="Area2D" parent="."]
 script = ExtResource( 2 )
@@ -46,5 +46,3 @@ pause_mode = 2
 [connection signal="body_entered" from="LevelBorderVillage" to="LevelBorderVillage" method="_on_LevelBorderVillage_body_entered"]
 [connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
-[connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
-[connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
