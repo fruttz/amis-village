@@ -37,6 +37,7 @@ func get_input():
 	if Input.is_action_just_released("ui_cancel"):
 		if not $"../Pause".is_visible():
 #			get_tree().paused = true
+#			$"../Pause".pause()
 			$"../Pause".show()
 		else:
 			$"../Pause".hide()

@@ -12,12 +12,17 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	$CenterContainer/VBoxContainer/Button.pressed.connect(self.unpause)
-#	pass
+func _process(delta):
+	if Input.is_action_just_released("ui_cancel"):
+		get_tree().paused = false
+		self.hide()
+	pass
 	
+
+func pause():
+	get_tree().paused = true
 
 func _on_Button_pressed():
 	print('eeeeeeeeeeeeeeeeee')
-	get_tree().paused = false
+	
 	pass # Replace with function body.
