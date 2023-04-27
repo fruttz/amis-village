@@ -21,13 +21,13 @@ func invertProx(action, water_name):
 func get_input():
 	velocity = Vector2.ZERO
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
+		velocity.x -= 1.0
 	if Input.is_action_pressed("move_right"):
-		velocity.x += 1
+		velocity.x += 1.0
 	if Input.is_action_pressed("move_up"):
-		velocity.y -= 1
+		velocity.y -= 1.0
 	if Input.is_action_pressed("move_down"):
-		velocity.y += 1
+		velocity.y += 1.0
 	velocity = velocity.normalized() * movementSpeed
 	
 	if Input.is_action_just_released("game_action") and inProximity:
@@ -45,13 +45,17 @@ func get_input():
 	
 	
 	
-		
+	
 
 func _physics_process(delta):
 	get_input()
-	velocity = move_and_slide(velocity)
-	
-
+	if velocity == Vector2.ZERO:
+		$AnimationTree.get("parameters/playback").travel("Idle")
+	else:
+		velocity = move_and_slide(velocity)
+		$AnimationTree.get("parameters/playback").travel("Walk")
+		$AnimationTree.set("parameters/Idle/blend_position", velocity)
+		$AnimationTree.set("parameters/Walk/blend_position", velocity)
 
 func _on_Area2D2_entered(water_name):
 	invertProx("entered", water_name)

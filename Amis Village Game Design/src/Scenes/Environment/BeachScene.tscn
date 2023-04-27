@@ -211,3 +211,4 @@ tile_data = PoolIntArray( 458773, 0, 0, 458774, 1, 0, 458775, 1, 0, 458776, 1, 0
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderVillage" to="LevelBorderVillage" method="_on_LevelBorderVillage_body_entered"]
+
