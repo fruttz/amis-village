@@ -48,7 +48,7 @@ position = Vector2( 76, 332 )
 position = Vector2( 1018, 307 )
 
 [node name="SwampPos" type="Position2D" parent="."]
-position = Vector2( 515, 10 )
+position = Vector2( 512, 37 )
 
 [node name="Fishing" parent="." instance=ExtResource( 6 )]
 pause_mode = 2

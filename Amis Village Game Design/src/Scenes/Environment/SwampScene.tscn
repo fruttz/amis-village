@@ -18,16 +18,16 @@ margin_bottom = 260.0
 text = "SWAMP"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 533, 513 )
+position = Vector2( 535, 428 )
 
 [node name="LevelBorderLake" type="Area2D" parent="."]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderLake"]
-position = Vector2( 532, 626 )
+position = Vector2( 534, 634 )
 shape = SubResource( 1 )
 
 [node name="LakePos" type="Position2D" parent="."]
-position = Vector2( 533, 590 )
+position = Vector2( 540, 540 )
 
 [connection signal="body_entered" from="LevelBorderLake" to="LevelBorderLake" method="_on_LevelBorderLake_body_entered"]
