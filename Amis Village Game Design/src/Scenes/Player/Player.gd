@@ -34,6 +34,18 @@ func get_input():
 	#		print(all[])
 		$"../Fishing".start()
 #		print("you acquired "+ inProximity +" fish")
+	if Input.is_action_just_released("ui_cancel"):
+		if not $"../Pause".is_visible():
+#			get_tree().paused = true
+#			$"../Pause".pause()
+			$"../Pause".show()
+		else:
+			$"../Pause".hide()
+#			get_tree().paused = false
+	
+	
+	
+	
 
 func _physics_process(delta):
 	get_input()
