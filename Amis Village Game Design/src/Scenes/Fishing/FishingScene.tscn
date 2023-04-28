@@ -38,4 +38,6 @@ wait_time = 0.05
 
 [node name="Persuade" parent="." instance=ExtResource( 1 )]
 
+[connection signal="combat_finished" from="Combat" to="." method="_on_Combat_combat_finished"]
 [connection signal="timeout" from="Combat/Timer" to="Combat" method="_on_Timer_timeout"]
+[connection signal="persuade_finished" from="Persuade" to="." method="_on_Persuade_persuade_finished"]

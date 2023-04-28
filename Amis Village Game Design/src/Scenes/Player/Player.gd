@@ -4,6 +4,7 @@ export var movementSpeed = 200
 signal fish1
 signal fish2
 var velocity = Vector2()
+var move_input = Vector2()
 var inProximity = ""
 
 var currentFishes
@@ -18,16 +19,21 @@ func invertProx(action, water_name):
 	print(inProximity)
 		
 
-func get_input():
+func getInput():
 	velocity = Vector2.ZERO
+	move_input = Vector2.ZERO
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= 1.0
+		move_input.x -= 1.0
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1.0
+		move_input.x += 1.0
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1.0
+		move_input.y -= 1.0
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1.0
+		move_input.y += 1.0
 	velocity = velocity.normalized() * movementSpeed
 	
 	if Input.is_action_just_released("game_action") and inProximity:
@@ -42,20 +48,21 @@ func get_input():
 		else:
 			$"../Pause".hide()
 #			get_tree().paused = false
-	
-	
-	
-	
 
-func _physics_process(delta):
-	get_input()
-	if velocity == Vector2.ZERO:
+func updateAnimation():
+	if move_input == Vector2.ZERO:
 		$AnimationTree.get("parameters/playback").travel("Idle")
 	else:
-		velocity = move_and_slide(velocity)
 		$AnimationTree.get("parameters/playback").travel("Walk")
-		$AnimationTree.set("parameters/Idle/blend_position", velocity)
-		$AnimationTree.set("parameters/Walk/blend_position", velocity)
+		$AnimationTree.set("parameters/Idle/blend_position", move_input)
+		$AnimationTree.set("parameters/Walk/blend_position", move_input)
+
+func _physics_process(delta):
+	getInput()
+	velocity = move_and_slide(velocity, Vector2(0,0), true, 1)
+	updateAnimation()
+
+	
 
 func _on_Area2D2_entered(water_name):
 	invertProx("entered", water_name)

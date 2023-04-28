@@ -52,3 +52,9 @@ func start():
 	add_child(dialog)
 
 
+# reset fish everytime combat or persuasion is finished
+func _on_Combat_combat_finished():
+	fish = randomCatch()
+
+func _on_Persuade_persuade_finished():
+	fish = randomCatch()

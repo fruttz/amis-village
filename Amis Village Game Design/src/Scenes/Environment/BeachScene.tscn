@@ -154,7 +154,7 @@ expand = true
 [node name="WaterCollision" type="StaticBody2D" parent="Background"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/WaterCollision"]
-polygon = PoolVector2Array( 4, 351, 488, 356, 484, 497, 674, 495, 673, 173, 718, 200, 913, 201, 973, 146, 1018, 193, 1022, 595, 4, 594 )
+polygon = PoolVector2Array( 4, 351, 488, 356, 484, 497, 674, 495, 673, 173, 714, 178, 913, 201, 973, 146, 1018, 193, 1022, 595, 4, 594 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Background"]
 

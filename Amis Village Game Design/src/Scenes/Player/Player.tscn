@@ -11,8 +11,9 @@
 [ext_resource path="res://src/Scenes/Player/idle_right.tres" type="Animation" id=9]
 [ext_resource path="res://src/Scenes/Player/idle_left.tres" type="Animation" id=10]
 
-[sub_resource type="RectangleShape2D" id=22]
-extents = Vector2( 16.5, 26.5 )
+[sub_resource type="CapsuleShape2D" id=22]
+radius = 15.5
+height = 9.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -66,13 +67,15 @@ animation = "walk_down"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=19]
 blend_point_0/node = SubResource( 15 )
-blend_point_0/pos = Vector2( -1, 0 )
+blend_point_0/pos = Vector2( -1.1, 0 )
 blend_point_1/node = SubResource( 16 )
-blend_point_1/pos = Vector2( 0, -0.9 )
+blend_point_1/pos = Vector2( 0, -1 )
 blend_point_2/node = SubResource( 17 )
-blend_point_2/pos = Vector2( 1, 0 )
+blend_point_2/pos = Vector2( 1.1, 0 )
 blend_point_3/node = SubResource( 18 )
 blend_point_3/pos = Vector2( 0, 1 )
+min_space = Vector2( -1.1, -1.1 )
+max_space = Vector2( 1.1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=20]
@@ -102,7 +105,7 @@ vframes = 6
 frame = 79
 
 [node name="PlayerCollider" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, 40.5 )
+position = Vector2( 0, 47 )
 shape = SubResource( 22 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -122,4 +125,4 @@ anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 9 )
 parameters/Idle/blend_position = Vector2( 0.0295763, -0.956897 )
-parameters/Walk/blend_position = Vector2( 0.261391, -0.00862074 )
+parameters/Walk/blend_position = Vector2( 0.000879407, 1.02414 )

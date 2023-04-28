@@ -5,6 +5,8 @@ extends Node
 # var a = 2
 # var b = "text"
 
+signal persuade_finished
+
 var curr_fish
 
 # Called when the node enters the scene tree for the first time.
@@ -30,5 +32,6 @@ func result_fish(param):
 	if param == "success":
 		# increase fish function
 		Inventory.updateAffection(curr_fish, 1)
+		emit_signal("persuade_finished")
 	get_tree().paused = false
 	pass

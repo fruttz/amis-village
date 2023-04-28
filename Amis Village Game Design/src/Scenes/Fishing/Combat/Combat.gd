@@ -1,8 +1,12 @@
 extends Control
 
+signal combat_finished
+
 onready var current_fish = get_parent().fish
 var normal_tint = Color.aquamarine.lightened(0.2)
 var window_tint = Color.red.lightened(0.2)
+
+
 
 func catchWindow(x1, x2):
 	if $CombatBar.value >= x1 and $CombatBar.value <= x2:
@@ -67,11 +71,21 @@ func _on_Timer_timeout(): #main function
 	if Input.is_action_pressed("game_action"): # game_action -> "E" key
 		if catchWindow(windows[0], windows[1]):
 			catchSuccess()
+			$CombatBar.value = 0
+			emit_signal("combat_finished")
+	
 		else:
 			catchFailed()
+			$CombatBar.value = 0
+			emit_signal("combat_finished")
 	# if button not pressed
 	if $CombatBar.value == $CombatBar.max_value:
 		catchFailed()
+		$CombatBar.value = 0
+		emit_signal("combat_finished")
+	
+	
+	
 	
 
 func startTimer():
