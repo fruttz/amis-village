@@ -161,11 +161,11 @@ polygon = PoolVector2Array( 4, 351, 488, 356, 484, 497, 674, 495, 673, 173, 714,
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/StaticBody2D"]
 polygon = PoolVector2Array( 241, 299, 241, 119, 455, 9, 503, 41, 500, 301 )
 
-[node name="WaterArea" parent="." instance=ExtResource( 4 )]
-position = Vector2( 573, 457 )
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 542, 288 )
+
+[node name="WaterArea" parent="." instance=ExtResource( 4 )]
+position = Vector2( 573, 457 )
 
 [node name="LevelBorderVillage" type="Area2D" parent="."]
 script = ExtResource( 2 )
@@ -175,6 +175,7 @@ position = Vector2( -53, 323 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
+visible = false
 margin_left = 283.0
 margin_top = 109.0
 margin_right = 469.0
@@ -196,6 +197,7 @@ pause_mode = 2
 visible = false
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
