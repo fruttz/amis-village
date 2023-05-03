@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1683095271.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "xd"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1683095214.json",
+		"name": "pak RT"
+	}
+}
