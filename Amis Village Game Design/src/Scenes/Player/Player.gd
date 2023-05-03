@@ -60,17 +60,22 @@ func updateAnimation():
 
 func _physics_process(delta):
 	getInput()
+#	if inProximity:
+#		toggleInteractable(true)
 	velocity = move_and_slide(velocity, Vector2(0,0), true, 1)
 	for i in get_slide_count():
+#		toggleInteractable(true)
 		var collision = get_slide_collision(i)
 		if Input.is_action_just_released("game_action") and collision.collider.name == "NPC":
 			print(collision.collider.npc_name)
 			var dialog = Dialogic.start("NPC/"+collision.collider.npc_name)
 			dialog.pause_mode = PAUSE_MODE_PROCESS
 			add_child(dialog)
+#		toggleInteractable(false)
 	updateAnimation()
 
-	
+func toggleInteractable(a):
+	$MarginContainer.visible = a
 
 func _on_Area2D2_entered(water_name):
 	invertProx("entered", water_name)
