@@ -4,12 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1678004423-785",
-			"name": "current_fish",
-			"type": 0,
-			"value": "string"
-		},
-		{
 			"id": "1679209385-787",
 			"name": "fish_portrait",
 			"type": 0,
@@ -20,6 +14,12 @@
 			"name": "player_name",
 			"type": 0,
 			"value": "Nguyen"
+		},
+		{
+			"id": "1678004423-785",
+			"name": "current_fish",
+			"type": 0,
+			"value": "string"
 		}
 	]
 }

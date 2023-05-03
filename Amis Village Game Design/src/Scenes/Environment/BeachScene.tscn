@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderVillage.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/Scenes/GUI/Pause.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Assets/Tileset/brickTileset.png" type="Texture" id=7]
 [ext_resource path="res://src/Assets/MapBackground/beach_background.png" type="Texture" id=8]
+[ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 23.25, 230.5 )
@@ -196,13 +197,20 @@ pause_mode = 2
 visible = false
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 458773, 0, 0, 458774, 1, 0, 458775, 1, 0, 458776, 1, 0, 458777, 2, 0, 524309, 3, 0, 524313, 5, 0, 589845, 6, 0, 589846, 7, 0, 589847, 7, 0, 589848, 7, 0, 589849, 8, 0 )
+
+[node name="NPC" parent="." instance=ExtResource( 9 )]
+position = Vector2( 135, 227 )
+mode = 1
+gravity_scale = -128.0
 
 [connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderVillage" to="LevelBorderVillage" method="_on_LevelBorderVillage_body_entered"]
+[connection signal="body_entered" from="NPC" to="Player" method="_on_NPC_body_entered"]

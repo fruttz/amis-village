@@ -6,7 +6,8 @@
 		"Characters": {
 			"files": [
 				"character-1677905391.json",
-				"character-1678007686.json"
+				"character-1678007686.json",
+				"character-1683088691.json"
 			],
 			"folders": {
 
@@ -56,7 +57,18 @@
 				"timeline-1677995281.json"
 			],
 			"folders": {
+				"NPC": {
+					"files": [
+						"timeline-1683088655.json"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
