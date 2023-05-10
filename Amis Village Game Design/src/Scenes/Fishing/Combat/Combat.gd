@@ -94,4 +94,3 @@ func startTimer():
 func close(param):
 	if param == "close":
 		get_tree().paused = false
-		
