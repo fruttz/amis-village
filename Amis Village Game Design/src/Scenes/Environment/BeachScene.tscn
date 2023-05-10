@@ -165,7 +165,7 @@ polygon = PoolVector2Array( 241, 299, 241, 119, 455, 9, 503, 41, 500, 301 )
 position = Vector2( 542, 288 )
 
 [node name="WaterArea" parent="." instance=ExtResource( 4 )]
-position = Vector2( 573, 457 )
+position = Vector2( 573, 444 )
 
 [node name="LevelBorderVillage" type="Area2D" parent="."]
 script = ExtResource( 2 )

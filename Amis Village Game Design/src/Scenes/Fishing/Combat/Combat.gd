@@ -15,28 +15,41 @@ func catchWindow(x1, x2):
 func catchDifficulty():
 	var window1 
 	var window2
+	var playerStrength
+	var playerStruggle
+	
 	if current_fish["difficulty"] == 1:
 		$Timer.set_wait_time(0.05)
 		window1 = 40
 		window2 = 90
+		playerStrength = 2
+		playerStruggle = 1
 	elif current_fish["difficulty"] == 2:
 		$Timer.set_wait_time(0.04)
 		window1 = 50
 		window2 = 90
+		playerStrength = 3
+		playerStruggle = 2
 	elif current_fish["difficulty"] == 3:
 		$Timer.set_wait_time(0.03)
 		window1 = 60
 		window2 = 90
+		playerStrength = 4
+		playerStruggle = 3
 	elif current_fish["difficulty"] == 4:
 		$Timer.set_wait_time(0.02)
 		window1 = 70
 		window2 = 90
+		playerStrength = 5
+		playerStruggle = 4
 	elif current_fish["difficulty"] == 5:
 		$Timer.set_wait_time(0.01)
 		window1 = 80
 		window2 = 90
-			
-	return [window1, window2]
+		playerStrength = 5
+		playerStruggle = 4
+		
+	return [window1, window2, playerStrength, playerStruggle]
 
 func catchIndicatorTrue():
 	$CombatBar.set_tint_progress(window_tint)
@@ -61,26 +74,30 @@ func catchFailed():
 		
 
 func _on_Timer_timeout(): #main function
-	var windows = catchDifficulty()
-	$CombatBar.value += 1
+	var windows = [catchDifficulty()[0], catchDifficulty()[1]]
+	var strength = catchDifficulty()[2]
+	var struggle = catchDifficulty()[3]
+	
+	if $CombatBar.value != 0:
+		$CombatBar.value -= 1
+	else:
+		$CombatBar.value = 0
+	
+	$CombatBar/CombatTimer.value += 1
 	if catchWindow(windows[0], windows[1]):
 		catchIndicatorTrue()
 	else:
 		catchIndicatorFalse()
 	# Check timing
 	if Input.is_action_pressed("game_action"): # game_action -> "E" key
+		$CombatBar.value += 2
+	# if button not pressed
+	if $CombatBar/CombatTimer.value == $CombatBar/CombatTimer.max_value:
 		if catchWindow(windows[0], windows[1]):
 			catchSuccess()
-			$CombatBar.value = 0
-			emit_signal("combat_finished")
-	
 		else:
 			catchFailed()
-			$CombatBar.value = 0
-			emit_signal("combat_finished")
-	# if button not pressed
-	if $CombatBar.value == $CombatBar.max_value:
-		catchFailed()
+		$CombatBar/CombatTimer.value = 0
 		$CombatBar.value = 0
 		emit_signal("combat_finished")
 	
