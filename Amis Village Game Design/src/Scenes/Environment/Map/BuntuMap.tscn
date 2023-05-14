@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Assets/Map/10 AIR BUNTU/C2EAF580-E400-4B0B-964F-75D5276425F9.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/10 AIR BUNTU/A2B6666D-E456-4438-89A4-6BDAFE9E9F75.png" type="Texture" id=2]
+
+[node name="Background" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -4, 459, 111, 457, 112, 398, 224, 401, 224, 343, 443, 340, 443, 285, 712, 284, 713, 341, 820, 343, 825, 389, 615, 398, 612, 335, 492, 341, 496, 392, 271, 398, 271, 507, -2, 511 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 665, 459, 667, 512, 713, 515, 718, 461 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 111, -234 )
+polygon = PoolVector2Array( 665, 459, 667, 512, 713, 515, 714, 463 )

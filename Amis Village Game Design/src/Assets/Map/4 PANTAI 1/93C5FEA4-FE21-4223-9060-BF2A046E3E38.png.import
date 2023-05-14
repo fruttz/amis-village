@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/93C5FEA4-FE21-4223-9060-BF2A046E3E38.png-22d4b0f61c8b3c157efb2faa26ca7a2d.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://src/Assets/Map/4 PANTAI 1/93C5FEA4-FE21-4223-9060-BF2A046E3E38.png"
+dest_files=[ "res://.import/93C5FEA4-FE21-4223-9060-BF2A046E3E38.png-22d4b0f61c8b3c157efb2faa26ca7a2d.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

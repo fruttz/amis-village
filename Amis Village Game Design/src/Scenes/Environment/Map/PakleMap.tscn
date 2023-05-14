@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Assets/Map/6 RUMAH PAK LE/5405F1F9-176B-4B57-BEA2-0416213E34B6.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/6 RUMAH PAK LE/E5085FBF-9523-4C31-8527-29D2081DC9EE.png" type="Texture" id=2]
+[ext_resource path="res://src/Assets/Map/6 RUMAH PAK LE/93B1492F-2646-45E9-9391-10337F73B90A.png" type="Texture" id=3]
+[ext_resource path="res://src/Assets/Map/6 RUMAH PAK LE/4DA0DFB9-C566-4C41-ADFD-42B5DCDD2562.png" type="Texture" id=4]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="TextureRect5" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="TextureRect6" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -3, 456, 85, 454, 81, 343, 188, 346, 192, 456, 305, 454, 301, 347, 460, 347, 467, 453, 640, 452, 634, 351, 739, 349, 742, 454, 864, 450, 862, -5, -3, -1 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -2, 506, 471, 508, 476, 564, 525, 564, 525, 652, 580, 654, 580, 506, 854, 509, 859, 662, 959, 664, 967, 158, 1022, 159, 1022, 44, 1070, 50, 1053, 673, -2, 681 )

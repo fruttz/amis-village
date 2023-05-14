@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/996D0C77-3067-48C5-B75C-5B23BA569873.png-a2efcdcabf02a5c3360f7131f41a987f.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://src/Assets/Map/1 RAWA/996D0C77-3067-48C5-B75C-5B23BA569873.png"
+dest_files=[ "res://.import/996D0C77-3067-48C5-B75C-5B23BA569873.png-a2efcdcabf02a5c3360f7131f41a987f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
