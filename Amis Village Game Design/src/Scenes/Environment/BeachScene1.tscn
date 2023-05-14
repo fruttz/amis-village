@@ -29,12 +29,13 @@ expand = true
 [node name="WaterArea" parent="." instance=ExtResource( 4 )]
 position = Vector2( 573, 457 )
 
-[node name="NPC" parent="." instance=ExtResource( 6 )]
-position = Vector2( 135, 227 )
-gravity_scale = -128.0
-
 [node name="Player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 542, 288 )
+z_index = 1
+
+[node name="NPC" parent="." instance=ExtResource( 6 )]
+position = Vector2( 135, 227 )
+z_index = -1
 
 [node name="LevelBorderPlayground" type="Area2D" parent="."]
 script = ExtResource( 2 )
@@ -79,7 +80,6 @@ visible = false
 [connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
-[connection signal="body_entered" from="NPC" to="Player" method="_on_NPC_body_entered"]
 [connection signal="body_entered" from="LevelBorderPlayground" to="LevelBorderPlayground" method="_on_LevelBorderPlayground_body_entered"]
-[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
+[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]

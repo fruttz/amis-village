@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1684056890.json",
+	"mirror_portraits": false,
+	"name": "Tengil",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 100,
+	"offset_y": 150,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://src/Assets/NPC/Tengil_portrait.png"
+		}
+	],
+	"scale": 75,
+	"theme": ""
+}

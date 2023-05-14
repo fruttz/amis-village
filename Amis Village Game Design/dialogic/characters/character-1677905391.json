@@ -8,14 +8,14 @@
 	"name": "player",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": 200,
+	"offset_y": 250,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://src/Assets/Sprites/Player_portrait.png"
 		}
 	],
-	"scale": 100,
+	"scale": 75,
 	"theme": ""
 }
