@@ -36,7 +36,7 @@ rotation = -0.00470341
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderBeach3"]
-position = Vector2( 519.667, 650.645 )
+position = Vector2( 519.582, 668.645 )
 rotation = -1.56127
 shape = SubResource( 1 )
 
@@ -53,10 +53,10 @@ __meta__ = {
 }
 
 [node name="Beach1Pos" type="Position2D" parent="."]
-position = Vector2( 565, 92 )
+position = Vector2( 279, 18 )
 
 [node name="Beach3Pos" type="Position2D" parent="."]
-position = Vector2( 422, 480 )
+position = Vector2( 266, 563 )
 
 [node name="Fishing" parent="." instance=ExtResource( 5 )]
 pause_mode = 2

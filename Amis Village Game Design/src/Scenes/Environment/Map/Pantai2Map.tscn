@@ -15,3 +15,6 @@ z_index = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 203, 163, 417, 163, 419, 438, 864, 435, 863, 274, 640, 275, 642, -3, 1027, -1, 1027, 602, 374, 599, 366, 445, 321, 444, 312, 384, 263, 385, 260, 326, 206, 323 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -53, -25, -15, -35, -23, 641, -58, 639 )

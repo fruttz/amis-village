@@ -33,7 +33,7 @@ position = Vector2( 208, 206 )
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderRumahPakLe"]
-position = Vector2( 520, 642 )
+position = Vector2( 513, 669 )
 rotation = 1.57041
 shape = SubResource( 1 )
 
@@ -42,7 +42,7 @@ visible = false
 position = Vector2( 558, 547 )
 
 [node name="RumahPakLePos" type="Position2D" parent="."]
-position = Vector2( 551, 504 )
+position = Vector2( 979, 547 )
 
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2

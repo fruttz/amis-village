@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 export var movementSpeed = 200
+export var fast_ms = 400
 signal fish1
 signal fish2
 var velocity = Vector2()
@@ -33,7 +34,10 @@ func getInput():
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1.0
 		move_input.y += 1.0
-	velocity = velocity.normalized() * movementSpeed
+	if Input.is_action_pressed("run"):
+		velocity = velocity.normalized() * fast_ms
+	else:
+		velocity = velocity.normalized() * movementSpeed
 	
 	if Input.is_action_just_released("game_action") and inProximity:
 	#		print(all[])

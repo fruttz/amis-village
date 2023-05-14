@@ -27,10 +27,10 @@ position = Vector2( 689, 431 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderLake1"]
-position = Vector2( 519, 653 )
+position = Vector2( 519, 694 )
 shape = SubResource( 1 )
 
 [node name="Lake1Pos" type="Position2D" parent="."]
-position = Vector2( 540, 540 )
+position = Vector2( 631, 567 )
 
 [connection signal="body_entered" from="LevelBorderLake1" to="LevelBorderLake1" method="_on_LevelBorderLake1_body_entered"]

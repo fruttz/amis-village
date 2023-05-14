@@ -52,7 +52,7 @@ __meta__ = {
 }
 
 [node name="Beach2Pos" type="Position2D" parent="."]
-position = Vector2( 502, 50 )
+position = Vector2( 271, 25 )
 
 [node name="RumahRT2Pos" type="Position2D" parent="."]
 position = Vector2( 67, 363 )

@@ -10,7 +10,6 @@
 [ext_resource path="res://src/Scenes/Player/walk_down.tres" type="Animation" id=8]
 [ext_resource path="res://src/Scenes/Player/idle_right.tres" type="Animation" id=9]
 [ext_resource path="res://src/Scenes/Player/idle_left.tres" type="Animation" id=10]
-
 [ext_resource path="res://src/Assets/NPC/tanda seru.png" type="Texture" id=11]
 
 [sub_resource type="CapsuleShape2D" id=22]
@@ -104,7 +103,7 @@ scale = Vector2( 0.06, 0.06 )
 texture = ExtResource( 1 )
 hframes = 15
 vframes = 6
-frame = 79
+frame = 19
 
 [node name="PlayerCollider" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 47 )

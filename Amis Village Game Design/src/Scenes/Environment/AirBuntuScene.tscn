@@ -30,7 +30,7 @@ text = "AIR BUNTU"
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderRumahPakLe"]
-position = Vector2( 492, -48.0001 )
+position = Vector2( 502, -58 )
 rotation = 1.56264
 shape = SubResource( 1 )
 
@@ -46,10 +46,10 @@ shape = SubResource( 1 )
 position = Vector2( 438, 498 )
 
 [node name="RumahPakLePos" type="Position2D" parent="."]
-position = Vector2( 517, 60 )
+position = Vector2( 497, 53 )
 
 [node name="RumahRT2Pos" type="Position2D" parent="."]
-position = Vector2( 958, 311 )
+position = Vector2( 988, 311 )
 
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2

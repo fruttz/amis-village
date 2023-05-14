@@ -1,7 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
-[ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=5]
@@ -19,7 +18,7 @@ script = ExtResource( 1 )
 [node name="Node" parent="." instance=ExtResource( 9 )]
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 902, 290 )
+position = Vector2( 915, 337 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 506.0
@@ -29,7 +28,7 @@ margin_bottom = 126.0
 text = "RUMAH PAK LE"
 
 [node name="NPC" parent="." instance=ExtResource( 5 )]
-position = Vector2( 100, 102 )
+position = Vector2( 333, 351 )
 
 [node name="LevelBorderRumahBuSiska" type="Area2D" parent="."]
 script = ExtResource( 8 )
@@ -51,22 +50,18 @@ shape = SubResource( 1 )
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderLake1"]
-position = Vector2( -45, 277 )
+position = Vector2( -76, 276 )
 rotation = 3.14296
 shape = SubResource( 1 )
 
-[node name="WaterArea" parent="." instance=ExtResource( 2 )]
-visible = false
-position = Vector2( 438, 498 )
-
 [node name="RumahBuSiskaPos" type="Position2D" parent="."]
-position = Vector2( 517, 60 )
+position = Vector2( 946, 56 )
 
 [node name="AirBuntuPos" type="Position2D" parent="."]
-position = Vector2( 514, 541 )
+position = Vector2( 549, 523 )
 
 [node name="Lake1Pos" type="Position2D" parent="."]
-position = Vector2( 62, 329 )
+position = Vector2( 53, 484 )
 
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
@@ -74,7 +69,3 @@ pause_mode = 2
 [connection signal="body_entered" from="LevelBorderRumahBuSiska" to="LevelBorderRumahBuSiska" method="_on_LevelBorderRumahBuSiska_body_entered"]
 [connection signal="body_entered" from="LevelBorderAirBuntu" to="LevelBorderAirBuntu" method="_on_LevelBorderAirBuntu_body_entered"]
 [connection signal="body_entered" from="LevelBorderLake1" to="LevelBorderLake1" method="_on_LevelBorderLake1_body_entered"]
-[connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
-[connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
-[connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]

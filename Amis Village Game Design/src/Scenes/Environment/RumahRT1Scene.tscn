@@ -42,7 +42,7 @@ visible = false
 position = Vector2( 438, 498 )
 
 [node name="RumahRT2Pos" type="Position2D" parent="."]
-position = Vector2( 736, 528 )
+position = Vector2( 572, 565 )
 
 [node name="Fishing" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
