@@ -7,7 +7,7 @@
 
 			],
 			"portrait": "",
-			"question": "Wah! Ada [current_fish]  keren terlihat di perairan, apa yang akan kamu lakukan?"
+			"question": "Wah! Ada [current_fish] keren terlihat di perairan, apa yang akan kamu lakukan?"
 		},
 		{
 			"choice": "Pancing! (Kasih Sayang)",

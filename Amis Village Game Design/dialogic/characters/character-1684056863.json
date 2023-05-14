@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1684056863.json",
+	"mirror_portraits": false,
+	"name": "Bu Siska",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 100,
+	"offset_y": 450,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://src/Assets/NPC/Siska_portrait.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

@@ -1,25 +1,49 @@
 {
 	"color": "#ffffffff",
 	"description": "",
-	"display_name": "current_fish",
+	"display_name": "Ikan",
 	"display_name_bool": true,
 	"id": "character-1678007686.json",
 	"mirror_portraits": false,
 	"name": "current fish",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": 700,
+	"offset_y": 150,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://src/Assets/Fish/ikan tuna.png"
+			"path": ""
 		},
 		{
 			"name": "Tuna",
-			"path": "res://src/Assets/Fish/ikan tuna.png"
+			"path": "res://src/Assets/Fish/Tuna.png"
+		},
+		{
+			"name": "Kepiting",
+			"path": "res://src/Assets/Fish/Kepiting.png"
+		},
+		{
+			"name": "Kecebong",
+			"path": "res://src/Assets/Fish/kecebong.png"
+		},
+		{
+			"name": "Gurita",
+			"path": "res://src/Assets/Fish/Gurita.png"
+		},
+		{
+			"name": "Gurame",
+			"path": "res://src/Assets/Fish/Gurame.png"
+		},
+		{
+			"name": "Blue tang",
+			"path": "res://src/Assets/Fish/Blue tang.png"
+		},
+		{
+			"name": "Arwana",
+			"path": "res://src/Assets/Fish/Arwana.png"
 		}
 	],
-	"scale": 100,
+	"scale": 20,
 	"theme": ""
 }

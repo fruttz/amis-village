@@ -71,9 +71,9 @@ func _physics_process(delta):
 	for i in get_slide_count():
 #		toggleInteractable(true)
 		var collision = get_slide_collision(i)
-		if Input.is_action_just_released("game_action") and collision.collider.name == "NPC":
-			print(collision.collider.npc_name)
-			var dialog = Dialogic.start("NPC/"+collision.collider.npc_name)
+		if Input.is_action_just_released("game_action") and collision.collider.name == "Front":
+			print(get_parent().get_node("NPC").npc_name)
+			var dialog = Dialogic.start("NPC_greeting/"+get_parent().get_node("NPC").npc_name)
 			dialog.pause_mode = PAUSE_MODE_PROCESS
 			add_child(dialog)
 #		toggleInteractable(false)
