@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Assets/Map/7 RUMAH PAK RT1/3A2648C5-6AA9-423C-9B1A-46B50FAAC5E1.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/7 RUMAH PAK RT1/444DA41E-500C-4A05-8AF0-894B2083C16B.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 374, 517, 650, 516, 645, 595, 998, 598, 998, 560, 947, 564, 951, 161, 993, 158, 1000, 1, 48, -2, 53, 46, 0, 45, 0, 602, 376, 599 )

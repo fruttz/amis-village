@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Scenes/Environment/Map/BudiMap.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderBeach.gd" type="Script" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -42,6 +43,8 @@ position = Vector2( 992, 291 )
 
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
+
+[node name="Node" parent="." instance=ExtResource( 6 )]
 
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach_body_entered"]
 [connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]

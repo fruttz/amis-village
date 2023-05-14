@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahRT2.gd" type="Script" id=6]
+[ext_resource path="res://src/Scenes/Environment/Map/PakRTMap.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.25, 467.448 )
@@ -13,8 +14,10 @@ extents = Vector2( 26.25, 467.448 )
 [node name="RumahRT1" type="Node"]
 script = ExtResource( 1 )
 
+[node name="Node" parent="." instance=ExtResource( 7 )]
+
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 902, 290 )
+position = Vector2( 612, 528 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 506.0
@@ -30,7 +33,7 @@ position = Vector2( 208, 206 )
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderRumahRT2"]
-position = Vector2( 530, 638 )
+position = Vector2( 530, 669 )
 rotation = 1.56264
 shape = SubResource( 1 )
 
@@ -39,7 +42,7 @@ visible = false
 position = Vector2( 438, 498 )
 
 [node name="RumahRT2Pos" type="Position2D" parent="."]
-position = Vector2( 736, 528 )
+position = Vector2( 572, 565 )
 
 [node name="Fishing" parent="." instance=ExtResource( 4 )]
 pause_mode = 2

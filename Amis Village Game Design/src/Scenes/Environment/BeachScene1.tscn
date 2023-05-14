@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderPlayground.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderBeach2.gd" type="Script" id=8]
+[ext_resource path="res://src/Scenes/Environment/Map/Pantai1Map.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 36.4098, 505.409 )
@@ -15,16 +16,7 @@ extents = Vector2( 36.4098, 505.409 )
 [node name="Beach1" type="Node"]
 script = ExtResource( 1 )
 
-[node name="Background" type="Node" parent="."]
-
-[node name="Texture" type="TextureRect" parent="Background"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-expand = true
-
-[node name="WaterCollision" type="StaticBody2D" parent="Background"]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Background"]
+[node name="Node" parent="." instance=ExtResource( 9 )]
 
 [node name="WaterArea" parent="." instance=ExtResource( 4 )]
 position = Vector2( 573, 457 )
@@ -47,7 +39,7 @@ shape = SubResource( 1 )
 script = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderBeach2"]
-position = Vector2( 514, 657 )
+position = Vector2( 514, 697 )
 rotation = 1.56771
 shape = SubResource( 1 )
 
@@ -64,10 +56,10 @@ __meta__ = {
 }
 
 [node name="PlaygroundPos" type="Position2D" parent="."]
-position = Vector2( 26, 252 )
+position = Vector2( 27, 474 )
 
 [node name="Beach2Pos" type="Position2D" parent="."]
-position = Vector2( 434, 455 )
+position = Vector2( 459, 566 )
 
 [node name="Fishing" parent="." instance=ExtResource( 7 )]
 pause_mode = 2
@@ -81,5 +73,5 @@ visible = false
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="NPC" to="Player" method="_on_NPC_body_entered"]
 [connection signal="body_entered" from="LevelBorderPlayground" to="LevelBorderPlayground" method="_on_LevelBorderPlayground_body_entered"]
-[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
+[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]

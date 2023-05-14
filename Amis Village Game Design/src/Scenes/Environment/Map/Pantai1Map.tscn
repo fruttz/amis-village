@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Assets/Map/4 PANTAI 1/C4D86AC8-BEBD-468B-810C-F982D81714EE.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/4 PANTAI 1/93C5FEA4-FE21-4223-9060-BF2A046E3E38.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 245, 120, 300, 114, 364, 80, 439, 26, 460, 12, 482, 11, 510, 43, 504, 308, 262, 303, 247, 192 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 641, 1, 645, 600, 1021, 599, 1025, -1 )

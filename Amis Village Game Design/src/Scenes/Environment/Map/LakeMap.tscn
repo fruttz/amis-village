@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Assets/Map/9 DANAU/8F37FC32-00E1-47F0-854A-B4749CC6162D.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/9 DANAU/7C7F1B21-8BEA-43E6-ABFB-3357A17F6B9D.png" type="Texture" id=2]
+[ext_resource path="res://src/Assets/Map/9 DANAU/6BFF31CA-33CE-44B1-B4CF-3FA73D08C6E0.png" type="Texture" id=3]
+
+[node name="Background" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Area2D" type="StaticBody2D" parent="TextureRect2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TextureRect2/Area2D" groups=["Water"]]
+build_mode = 1
+polygon = PoolVector2Array( 553, 227, 607, 228, 609, 171, 658, 171, 661, 564, 611, 564, 608, 506, 556, 508, 556, 453, 438, 452, 439, 506, 383, 509, 385, 567, 224, 569, 224, 510, 166, 510, 166, 456, 112, 452, 113, 228, 165, 229, 166, 172, 221, 170, 224, 106, 168, 107, 165, 50, 112, 52, 110, -5, 273, -3, 273, 167, 433, 169, 437, 227, 493, 224, 493, 281, 553, 281 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="TextureRect2/Area2D" groups=["Water"]]
+position = Vector2( 615, 109 )
+polygon = PoolVector2Array( 154, -110, 156, -61, 215, -64, 216, -10, 268, -7, 273, 116, 216, 118, 219, 458, 321, 459, 322, 404, 414, 405, 408, 342, 268, 344, 269, 227, 324, 227, 322, -55, 268, -55, 272, -113 )
+
+[node name="TextureRect3" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+z_index = 2
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Area2D" type="StaticBody2D" parent="TextureRect3"]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="TextureRect3/Area2D"]
+polygon = PoolVector2Array( 0, 277.2, 91.875, 273.6, 90, 372.6, 0, 370.8, 0, 669.6, 114.375, 666, 112.5, 910.8, 155.625, 903.6, 161.25, 1180.8, -9.375, 1213.2 )
+
+[node name="CollisionShape2D2" type="CollisionPolygon2D" parent="TextureRect3/Area2D"]
+polygon = PoolVector2Array( 2019.38, 844.199, 1944.38, 835.199, 1953.75, 1188, -11.25, 1209.6, 5.625, -295.2, -45, -282.6, -78.75, 1254.6, 2030.63, 1236.6 )

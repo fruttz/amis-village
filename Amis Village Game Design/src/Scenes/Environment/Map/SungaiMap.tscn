@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Assets/Map/5 SUNGAI/B9F40832-FC38-4D46-BA1A-4EBB69EC46CE.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/5 SUNGAI/1AFA4F2B-FD78-4D44-9283-9136B564B28D.png" type="Texture" id=3]
+[ext_resource path="res://src/Assets/Map/5 SUNGAI/B694394C-CA55-4317-A654-406457193C07.png" type="Texture" id=4]
+[ext_resource path="res://src/Assets/Map/5 SUNGAI/58AA6838-57CC-4A40-AE6B-083D63C66520.png" type="Texture" id=5]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="TextureRect6" type="Sprite" parent="."]
+scale = Vector2( 0.533854, 0.556481 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="TextureRect5" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 114, 593, 117, 458, 166, 460, 166, 287, 229, 287, 228, 230, 277, 230, 285, 174, 333, 170, 333, 110, 595, 114, 596, 219, 375, 219, 379, 275, 320, 279, 318, 449, 269, 448, 269, 598 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 710, 532, 757, 507, 835, 496, 918, 502, 982, 526, 982, 543, 874, 532, 874, 601, 780, 596, 779, 536, 712, 547 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 650, 118, 726, 117, 730, -1, 764, 0, 767, 114, 819, 115, 818, 174, 874, 174, 891, 386, 941, 387, 968, 425, 930, 399, 877, 394, 783, 394, 737, 417, 724, 419, 709, 428, 729, 403, 779, 376, 779, 222, 668, 218 )
