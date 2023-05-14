@@ -8,7 +8,12 @@
 				"character-1677905391.json",
 				"character-1678007686.json",
 				"character-1683088691.json",
-				"character-1683095271.json"
+				"character-1683095271.json",
+				"character-1684056767.json",
+				"character-1684056844.json",
+				"character-1684056863.json",
+				"character-1684056890.json",
+				"character-1684056906.json"
 			],
 			"folders": {
 
@@ -58,10 +63,51 @@
 				"timeline-1677995281.json"
 			],
 			"folders": {
-				"NPC": {
+				"NPC_greeting": {
 					"files": [
 						"timeline-1683088655.json",
-						"timeline-1683095214.json"
+						"timeline-1683095214.json",
+						"timeline-1684056941.json",
+						"timeline-1684056963.json",
+						"timeline-1684056990.json",
+						"timeline-1684057007.json",
+						"timeline-1684057033.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"NPC_quest": {
+					"files": [
+						"timeline-1684061201.json",
+						"timeline-1684061226.json",
+						"timeline-1684061233.json",
+						"timeline-1684061240.json",
+						"timeline-1684061244.json",
+						"timeline-1684061250.json",
+						"timeline-1684061274.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"NPC_reward": {
+					"files": [
+						"timeline-1684061284.json",
+						"timeline-1684061292.json",
+						"timeline-1684061312.json",
+						"timeline-1684061316.json",
+						"timeline-1684061329.json",
+						"timeline-1684061342.json",
+						"timeline-1684061346.json"
 					],
 					"folders": {
 

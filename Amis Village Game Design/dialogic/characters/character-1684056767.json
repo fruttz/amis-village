@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1684056767.json",
+	"mirror_portraits": false,
+	"name": "Bu RT",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 100,
+	"offset_y": 300,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://src/Assets/NPC/Bu RT_portrait.png"
+		}
+	],
+	"scale": 40,
+	"theme": ""
+}

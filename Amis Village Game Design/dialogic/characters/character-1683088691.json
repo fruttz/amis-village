@@ -5,10 +5,10 @@
 	"display_name_bool": false,
 	"id": "character-1683088691.json",
 	"mirror_portraits": false,
-	"name": "pakle",
+	"name": "Pak Le",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 200,
+	"offset_x": 100,
 	"offset_y": 400,
 	"portraits": [
 		{
@@ -16,6 +16,6 @@
 			"path": "res://src/Assets/NPC/pakle.png"
 		}
 	],
-	"scale": 20,
-	"theme": ""
+	"scale": 40,
+	"theme": "default-theme.cfg"
 }

@@ -1,0 +1,41 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kevin1: Halo, kak [player_name], kakak enggak punya kerjaan ya?\nKevin2: Sembarangan! Kak [player_name] sibuk tahu!"
+		},
+		{
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kevin3: Kalau punya banyak uang aku pengen beli beyblade, deh, kak."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684057007.json",
+		"name": "Tengil"
+	}
+}
