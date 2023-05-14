@@ -61,10 +61,10 @@ __meta__ = {
 }
 
 [node name="Beach1Pos" type="Position2D" parent="."]
-position = Vector2( 506, 33 )
+position = Vector2( 565, 92 )
 
 [node name="Beach3Pos" type="Position2D" parent="."]
-position = Vector2( 524, 569 )
+position = Vector2( 422, 480 )
 
 [node name="Fishing" parent="." instance=ExtResource( 5 )]
 pause_mode = 2

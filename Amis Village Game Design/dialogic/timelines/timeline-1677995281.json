@@ -7,10 +7,10 @@
 
 			],
 			"portrait": "",
-			"question": "Oh hey! There is a [current_fish] on the line!  "
+			"question": "Wah! Ada [current_fish]  keren terlihat di perairan, apa yang akan kamu lakukan?"
 		},
 		{
-			"choice": "Persuade",
+			"choice": "Pancing! (Kasih Sayang)",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -21,7 +21,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"choice": "Fight",
+			"choice": "Pancing! (Keributan)",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
