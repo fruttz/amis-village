@@ -1,10 +1,550 @@
 {
 	"events": [
 		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah! Kita ketemu lagi!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hai, [player_name]. Mengapa kamu ke sini hari ini?"
+		},
+		{
+			"choice": "Aku ingin bertemu denganmu.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, benarkah?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Benar dong, kan aku sudah bilang kalau aku mau mengenal ikan-ikan selain di Amis Village."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aku kan juga ikan Amis Village! Memangnya apa bedanya aku dengan hewan lain?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hewan lain seperti Pak RT kan punya rumah, sedangkan kamu tidak, jadi lebih sulit untuk menemuimu."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kalau begitu kenapa kamu tidak membuatkanku rumah saja?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, kamu pasti tidak tahu harga tanah tahun ini ya?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tidak tahu, kan aku tinggal di air."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ".... betul juga."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Intinya mahal! Aku saja tidak punya rumah juga kok."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Memangnya kenapa harga rumah bisa mahal?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jadi begini …."
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is 1 persuade"
+			"text": "[player_name] menjelaskan mengenai inflasi di Amis Village yang disebabkan oleh korupsi anggaran oleh keluarga Pak RT. Korupsi ini berkontribusi terhadap defisit keuangan kas Amis Village yang secara tidak langsung menyebabkan inflasi di Amis Village yang pasar uangnya belum berkembang."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jadi ini semua karena Pak RT dan keluarganya, dong?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Secara tidak langsung sih iya."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Memang betul-betul mengambil keuntungan dari jabatan ya, aku tidak suka dengan itu makanya dulu aku mendukung Tatang saja untuk jadi Ketua RT."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Lalu kenapa Tatang tidak jadi Ketua RT?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Karena Tatang tidak ingin terikat dengan Amis Village, dia adalah ikan yang suka berkelana. Jadi sepertinya jabatan Ketua RT tidak cocok dengannya."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul juga sih, aku juga kadang merasa ingin mengunjungi negara negara lain, tapi malah terjebak di sini …"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Maaf aku jadi mengingatkanmu ke keinginanmu yang tidak kesampaian itu. Tapi memangnya kamu ingin berkelana ke negara apa? Siapa tahu aku pernah ke sana dan bisa menceritakannya kepadamu."
+		},
+		{
+			"choice": "Tidak apa-apa, aku pasti tetap akan ke Sudan Selatan suatu hari nanti.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh? Itu di mana? Kenapa aku belum pernah dengar negara itu?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hahahaha, negara itu memang tidak punya pantai sih, jadi kemungkinan kamu atau bahkan Tatang memang belum pernah ke sana."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Benarkah? Menarik sekali, kalau kamu bisa ke sana bawa aku, ya!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut mengobrol mengenai rencana keberangkatan ke Sudan Selatan."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Hei, kalau aku tidak terjebak di sini aku tidak akan bertemu denganmu tahu. Tapi aku sebenarnya selalu ingin ke Armenia.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Mengapa tidak kamu saja yang jadi Ketua RT?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Apakah menurutmu aku cocok untuk menjadi ketua RT?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mungkin … Memang kenapa kamu tidak mencalonkan diri menjadi ketua RT saja?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bukannya alasannya jelas? Aku kan bukan warga Amis Village."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Memang syarat jadi Ketua RT harus warga Amis Village ya? Berarti aku juga tidak bisa dong? (berpikir keras)"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sepertinya iya sih, tapi kan kita tinggal mendaftar sebagai warga Amis Village ke Pak RT."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka lanjut mengobrol mengenai syarat-syarat imigrasi di Amis Village dan perbandingannya dengan negara-negara lain."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Aku iseng lewat saja kemudian mampir.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dan dari semua ikan yang ada di sini, kamu bertemu denganku? Pertemuan kita berdua memang takdir."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Apakah kamu percaya dengan takdir?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Pertanyaanmu cukup menarik, mungkin aku memang percaya dengan takdir. Memang alasan apa lagi yang membuat kita bisa bertemu dua kali berturut-turut di tempat yang sama. Kamu sendiri apakah percaya dengan itu?"
+		},
+		{
+			"choice": "Tidak sih, aku yakin semua hal pasti ada alasan logisnya.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Lalu memang apa lagi alasan untuk hal-hal seperti ini? Seperti pertemuan kita, kelangkaan rumput laut, dan soal seberapa sering aku melihat Pak RT bertemu dengan Bu Siska diam diam?"
+		},
+		{
+			"choice": "Kelangkaan rumput laut?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul, kamu tidak tahu ya, rumput laut pernah langka di sini karena sesuatu yang namanya in … inversi? Intelegensi?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maksudmu inflasi? Aku baru tahu kalau kalian hewan air juga mengalaminya."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Apa maksudmu kamu juga mengalaminya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul, di Amis Village sendiri sekarang terjadi inflasi karena keluarga Pak RT."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keluarga Pak RT?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name] menjelaskan mengenai inflasi di Amis Village yang disebabkan oleh korupsi anggaran oleh keluarga Pak RT. Korupsi ini berkontribusi terhadap defisit keuangan kas Amis Village yang secara tidak langsung menyebabkan inflasi di Amis Village yang pasar uangnya belum berkembang."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Menarik sekali ternyata kita mengalami hal yang sama. Mari mengobrol lebih lama lagi lain waktu"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[current_fish]  kembali ke perairan."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Apa maksudmu Pak RT bertemu dengan Bu Siska diam-diam?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul! Aku sering melihatnya ketika malam hari."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kukira Pak RT hanya korupsi saja ternyata …"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hei! Aku baru dengar yang Pak RT korupsi. Ceritakan lebih dalam dong!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name] menjelaskan mengenai inflasi di Amis Village yang disebabkan oleh korupsi anggaran oleh keluarga Pak RT. Korupsi ini berkontribusi terhadap defisit keuangan kas Amis Village yang secara tidak langsung menyebabkan inflasi di Amis Village yang pasar uangnya belum berkembang."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kasihan sekali kalian warga Amis Village harus mengalami hal itu, aku jadi ingin menangis."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka menangisi kondisi ekonomi Amis Village"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Beberapa hal seperti pertemuan kita ini tidak bisa dijelaskan dengan alasan selain takdir sih.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Iya kan! Seperti pertemuan kita, kelangkaan rumput laut, dan soal seberapa sering aku melihat Pak RT bertemu dengan Bu Siska diam diam tiap malam."
+		},
+		{
+			"choice": "Kelangkaan rumput laut?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul, kamu tidak tahu ya, rumput laut pernah langka di sini karena sesuatu yang namanya in … inversi? Intelegensi?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maksudmu inflasi? Aku baru tahu kalau kalian hewan air juga mengalaminya."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Apa maksudmu kamu juga mengalaminya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul, di Amis Village sendiri sekarang terjadi inflasi karena keluarga Pak RT."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keluarga Pak RT?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name] menjelaskan mengenai inflasi di Amis Village yang disebabkan oleh korupsi anggaran oleh keluarga Pak RT. Korupsi ini berkontribusi terhadap defisit keuangan kas Amis Village yang secara tidak langsung menyebabkan inflasi di Amis Village yang pasar uangnya belum berkembang."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Menarik sekali ternyata kita mengalami hal yang sama. Mari mengobrol lebih lama."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka mengobrol lebih lama mengenai perbandingan inflasi di Amis Village dan di perairan lain."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"choice": "Apa maksudmu Pak RT bertemu dengan Bu Siska diam-diam?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul! Aku sering melihatnya ketika malam hari."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kukira Pak RT hanya korupsi saja ternyata …"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hei! Aku baru dengar yang Pak RT korupsi. Ceritakan lebih dalam dong!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[player_name] menjelaskan mengenai inflasi di Amis Village yang disebabkan oleh korupsi anggaran oleh keluarga Pak RT. Korupsi ini berkontribusi terhadap defisit keuangan kas Amis Village yang secara tidak langsung menyebabkan inflasi di Amis Village yang pasar uangnya belum berkembang."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kasihan sekali kalian warga Amis Village harus mengalami hal itu, aku jadi ingin menangis."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka menangisi kondisi ekonomi Amis Village"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Affection +1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"emit_signal": "success",
