@@ -73,5 +73,5 @@ visible = false
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderPlayground" to="LevelBorderPlayground" method="_on_LevelBorderPlayground_body_entered"]
-[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]
+[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
