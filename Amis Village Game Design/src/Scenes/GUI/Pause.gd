@@ -14,9 +14,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_just_released("ui_cancel"):
-		get_tree().paused = false
-		self.hide()
-	pass
+#		get_tree().paused = false
+#		self.hide()
+		pass
 	
 
 func pause():
