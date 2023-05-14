@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahPakLe.gd" type="Script" id=6]
+[ext_resource path="res://src/Scenes/Environment/Map/SiskaMap.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.25, 521.362 )
@@ -13,8 +14,10 @@ extents = Vector2( 26.25, 521.362 )
 [node name="RumahBuSiska" type="Node"]
 script = ExtResource( 1 )
 
+[node name="Node" parent="." instance=ExtResource( 7 )]
+
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 902, 290 )
+position = Vector2( 930, 525 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 506.0
@@ -36,7 +39,7 @@ shape = SubResource( 1 )
 
 [node name="WaterArea" parent="." instance=ExtResource( 2 )]
 visible = false
-position = Vector2( 438, 498 )
+position = Vector2( 558, 547 )
 
 [node name="RumahPakLePos" type="Position2D" parent="."]
 position = Vector2( 551, 504 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
@@ -8,12 +8,15 @@
 [ext_resource path="res://src/Scenes/Environment/LevelBorderLake1.gd" type="Script" id=6]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderAirBuntu.gd" type="Script" id=7]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahBuSiska.gd" type="Script" id=8]
+[ext_resource path="res://src/Scenes/Environment/Map/PakleMap.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 26.25, 467.448 )
+extents = Vector2( 26.25, 521.649 )
 
 [node name="RumahPakLe" type="Node"]
 script = ExtResource( 1 )
+
+[node name="Node" parent="." instance=ExtResource( 9 )]
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 902, 290 )
@@ -32,7 +35,7 @@ position = Vector2( 100, 102 )
 script = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderRumahBuSiska"]
-position = Vector2( 492, -48.0001 )
+position = Vector2( 546.199, -48.4422 )
 rotation = 1.56264
 shape = SubResource( 1 )
 

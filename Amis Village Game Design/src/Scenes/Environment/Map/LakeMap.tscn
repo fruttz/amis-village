@@ -37,4 +37,7 @@ centered = false
 [node name="Area2D" type="StaticBody2D" parent="TextureRect3"]
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="TextureRect3/Area2D"]
-polygon = PoolVector2Array( 0, 277.2, 91.875, 273.6, 90, 372.6, 0, 370.8, 0, 669.6, 114.375, 666, 112.5, 910.8, 155.625, 903.6, 161.25, 1180.8, 960, 1200.6, 958.125, 1238.4, -9.375, 1213.2 )
+polygon = PoolVector2Array( 0, 277.2, 91.875, 273.6, 90, 372.6, 0, 370.8, 0, 669.6, 114.375, 666, 112.5, 910.8, 155.625, 903.6, 161.25, 1180.8, -9.375, 1213.2 )
+
+[node name="CollisionShape2D2" type="CollisionPolygon2D" parent="TextureRect3/Area2D"]
+polygon = PoolVector2Array( 2019.38, 844.199, 1944.38, 835.199, 1953.75, 1188, -11.25, 1209.6, 5.625, -295.2, -45, -282.6, -78.75, 1254.6, 2030.63, 1236.6 )
