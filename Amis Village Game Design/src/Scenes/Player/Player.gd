@@ -45,6 +45,7 @@ func getInput():
 		if not $"../Pause".is_visible():
 #			get_tree().paused = true
 #			$"../Pause".pause()
+			print("asa")
 			$"../Pause".show()
 		else:
 			$"../Pause".hide()
@@ -60,9 +61,26 @@ func updateAnimation():
 
 func _physics_process(delta):
 	getInput()
+#	if inProximity:
+#		toggleInteractable(true)
 	velocity = move_and_slide(velocity, Vector2(0,0), true, 1)
+	for i in get_slide_count():
+#		toggleInteractable(true)
+		var collision = get_slide_collision(i)
+		if Input.is_action_just_released("game_action") and collision.collider.name == "NPC":
+			print(collision.collider.npc_name)
+			var dialog = Dialogic.start("NPC/"+collision.collider.npc_name)
+			dialog.pause_mode = PAUSE_MODE_PROCESS
+			add_child(dialog)
+#		toggleInteractable(false)
 	updateAnimation()
 
+
+func _on_Area2D2_entered(water_name):
+	invertProx("entered", water_name)
+#	currentFishes = 
+	print(water_name)
+	pass # Replace with function body.
 	
 func _on_Area2D_entered(water_name):
 	invertProx("entered", water_name)
@@ -75,7 +93,11 @@ func _on_Area2D_exit():
 	$PlayerUI.hide()
 	pass # Replace with function body.
 
+func _on_Area2D3_entered(water_name):
+	invertProx("entered", water_name)
+	print(water_name)
+	pass # Replace with function body.
 
-
-
-
+func _on_NPC_body_entered(body):
+	print("check")
+	pass # Replace with function body.

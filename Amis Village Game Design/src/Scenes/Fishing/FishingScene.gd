@@ -58,3 +58,7 @@ func _on_Combat_combat_finished():
 
 func _on_Persuade_persuade_finished():
 	fish = randomCatch()
+
+func _process(delta):
+	if Input.is_action_just_pressed("move_left"):
+		$MarginContainer/TextureRect/AnimationPlayer.play("New Anim")

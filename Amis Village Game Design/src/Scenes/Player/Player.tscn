@@ -10,7 +10,8 @@
 [ext_resource path="res://src/Scenes/Player/walk_down.tres" type="Animation" id=8]
 [ext_resource path="res://src/Scenes/Player/idle_right.tres" type="Animation" id=9]
 [ext_resource path="res://src/Scenes/Player/idle_left.tres" type="Animation" id=10]
-[ext_resource path="res://src/Assets/UI/tanda seru2.png" type="Texture" id=11]
+
+[ext_resource path="res://src/Assets/NPC/tanda seru.png" type="Texture" id=11]
 
 [sub_resource type="CapsuleShape2D" id=22]
 radius = 15.5
@@ -127,6 +128,23 @@ active = true
 parameters/playback = SubResource( 9 )
 parameters/Idle/blend_position = Vector2( 0.0295763, -0.956897 )
 parameters/Walk/blend_position = Vector2( 0.000879407, 1.02414 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
+margin_left = -90.0
+margin_top = -94.0
+margin_right = -2.0
+margin_bottom = -7.0
+rect_rotation = -27.7
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+margin_right = 88.0
+margin_bottom = 87.0
+texture = ExtResource( 11 )
+expand = true
 
 [node name="PlayerUI" type="Control" parent="."]
 visible = false
