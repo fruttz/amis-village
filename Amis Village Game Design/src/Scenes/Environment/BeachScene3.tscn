@@ -1,18 +1,17 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/Scenes/Environment/LevelBorderVillage.gd" type="Script" id=2]
+[ext_resource path="res://src/Scenes/Environment/LevelBorderBeach2.gd" type="Script" id=2]
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=3]
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/GUI/Pause.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/Assets/MapBackground/beach_background.png" type="Texture" id=8]
-[ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/Scenes/Environment/LevelBorderRumahRT2.gd" type="Script" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 23.25, 230.5 )
+extents = Vector2( 23.25, 524.675 )
 
-[node name="Beach" type="Node"]
+[node name="Beach3" type="Node"]
 script = ExtResource( 3 )
 
 [node name="Background" type="Node" parent="."]
@@ -20,51 +19,48 @@ script = ExtResource( 3 )
 [node name="Texture" type="TextureRect" parent="Background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 8 )
 expand = true
 
 [node name="WaterCollision" type="StaticBody2D" parent="Background"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/WaterCollision"]
-polygon = PoolVector2Array( 4, 351, 488, 356, 484, 497, 674, 495, 673, 173, 714, 178, 913, 201, 973, 146, 1018, 193, 1022, 595, 4, 594 )
-
 [node name="StaticBody2D" type="StaticBody2D" parent="Background"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Background/StaticBody2D"]
-polygon = PoolVector2Array( 241, 299, 241, 119, 455, 9, 503, 41, 500, 301 )
 
 [node name="WaterArea" parent="." instance=ExtResource( 4 )]
 position = Vector2( 573, 457 )
 
-[node name="NPC" parent="." instance=ExtResource( 9 )]
-position = Vector2( 135, 227 )
-gravity_scale = -128.0
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 542, 288 )
 
-[node name="LevelBorderVillage" type="Area2D" parent="."]
+[node name="LevelBorderBeach2" type="Area2D" parent="."]
 script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderVillage"]
-position = Vector2( -53, 323 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderBeach2"]
+position = Vector2( 563, -42 )
+rotation = 1.56811
+shape = SubResource( 1 )
+
+[node name="LevelBorderRumahRT2" type="Area2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderRumahRT2"]
+position = Vector2( -45, 319 )
+rotation = -0.00141501
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-visible = false
 margin_left = 283.0
 margin_top = 109.0
 margin_right = 469.0
 margin_bottom = 166.0
-text = "BEACH"
+text = "BEACH3"
 align = 1
 valign = 1
 __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="VillagePos" type="Position2D" parent="."]
-position = Vector2( 16, 233 )
+[node name="Beach2Pos" type="Position2D" parent="."]
+position = Vector2( 502, 50 )
 
 [node name="Fishing" parent="." instance=ExtResource( 5 )]
 pause_mode = 2
@@ -76,5 +72,5 @@ visible = false
 [connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
-[connection signal="body_entered" from="NPC" to="Player" method="_on_NPC_body_entered"]
-[connection signal="body_entered" from="LevelBorderVillage" to="LevelBorderVillage" method="_on_LevelBorderVillage_body_entered"]
+[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
+[connection signal="body_entered" from="LevelBorderRumahRT2" to="LevelBorderRumahRT2" method="_on_LevelBorderRumahRT2_body_entered"]

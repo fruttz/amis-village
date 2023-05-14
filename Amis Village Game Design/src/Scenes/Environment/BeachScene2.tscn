@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Scenes/Environment/LevelBorderBeach3.gd" type="Script" id=2]
+[ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=3]
+[ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Scenes/GUI/Pause.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Scenes/Environment/LevelBorderBeach1.gd" type="Script" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 23.25, 508.18 )
+
+[node name="Beach2" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Background" type="Node" parent="."]
+
+[node name="Texture" type="TextureRect" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+
+[node name="WaterCollision" type="StaticBody2D" parent="Background"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Background"]
+
+[node name="WaterArea" parent="." instance=ExtResource( 4 )]
+position = Vector2( 573, 457 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 542, 288 )
+
+[node name="LevelBorderBeach1" type="Area2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderBeach1"]
+position = Vector2( 498, -46 )
+rotation = 1.56493
+shape = SubResource( 1 )
+
+[node name="LevelBorderBeach3" type="Area2D" parent="."]
+rotation = -0.00470341
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderBeach3"]
+position = Vector2( 519.667, 650.645 )
+rotation = -1.56127
+shape = SubResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 283.0
+margin_top = 109.0
+margin_right = 469.0
+margin_bottom = 166.0
+text = "BEACH2"
+align = 1
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Beach1Pos" type="Position2D" parent="."]
+position = Vector2( 506, 33 )
+
+[node name="Beach3Pos" type="Position2D" parent="."]
+position = Vector2( 524, 569 )
+
+[node name="Fishing" parent="." instance=ExtResource( 5 )]
+pause_mode = 2
+
+[node name="Pause" parent="." instance=ExtResource( 6 )]
+visible = false
+
+[connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
+[connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
+[connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
+[connection signal="body_entered" from="LevelBorderBeach1" to="LevelBorderBeach1" method="_on_LevelBorderBeach1_body_entered"]
+[connection signal="body_entered" from="LevelBorderBeach3" to="LevelBorderBeach3" method="_on_LevelBorderBeach3_body_entered"]
