@@ -10,7 +10,7 @@ export var npc_name = "Mr. X"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	initNPC()
-	self.z_index = -1
+	self.z_index = 0
 
 func initNPC():
 	var sprite_name = "res://src/Assets/NPC/"+ npc_name +"_sprite.png"
@@ -24,9 +24,9 @@ func initNPC():
 
 
 func _on_Back_body_entered(body):
-	self.z_index = 1
+	self.z_index = 2
 	
 
 
 func _on_Back_body_exited(body):
-	self.z_index = -1
+	self.z_index = 0

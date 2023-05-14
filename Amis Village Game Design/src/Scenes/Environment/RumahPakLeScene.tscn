@@ -29,6 +29,7 @@ text = "RUMAH PAK LE"
 
 [node name="NPC" parent="." instance=ExtResource( 5 )]
 position = Vector2( 333, 351 )
+npc_name = "Pak Le"
 
 [node name="LevelBorderRumahBuSiska" type="Area2D" parent="."]
 script = ExtResource( 8 )

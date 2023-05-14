@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
-[ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=5]
@@ -68,10 +67,6 @@ position = Vector2( 520, 560 )
 
 [node name="Fishing" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
-
-[node name="NPC" parent="." instance=ExtResource( 2 )]
-position = Vector2( 401, 273 )
-npc_name = "pak RT"
 
 [connection signal="body_entered" from="LevelBorderSwamp" to="LevelBorderSwamp" method="_on_LevelBorderSwamp_body_entered"]
 [connection signal="body_entered" from="LevelBorderRumahPakLe" to="LevelBorderRumahPakLe" method="_on_LevelBorderRumahPakLe_body_entered"]

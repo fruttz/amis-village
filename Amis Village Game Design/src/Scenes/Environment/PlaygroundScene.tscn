@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
-[ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=5]
@@ -26,6 +25,7 @@ text = "PLAYGROUND"
 
 [node name="NPC" parent="." instance=ExtResource( 5 )]
 position = Vector2( 208, 206 )
+npc_name = "Budi"
 
 [node name="LevelBorderBeach2" type="Area2D" parent="."]
 script = ExtResource( 7 )
@@ -33,10 +33,6 @@ script = ExtResource( 7 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderBeach2"]
 position = Vector2( 1066, 285 )
 shape = SubResource( 1 )
-
-[node name="WaterArea" parent="." instance=ExtResource( 2 )]
-visible = false
-position = Vector2( 438, 498 )
 
 [node name="Beach1Pos" type="Position2D" parent="."]
 position = Vector2( 992, 291 )
@@ -47,7 +43,3 @@ pause_mode = 2
 [node name="Node" parent="." instance=ExtResource( 6 )]
 
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach_body_entered"]
-[connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
-[connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
-[connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]

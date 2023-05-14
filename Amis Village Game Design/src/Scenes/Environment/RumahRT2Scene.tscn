@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
-[ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/Environment/Map/PakRT2Map.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderBeach3.gd" type="Script" id=6]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahRT1.gd" type="Script" id=7]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderAirBuntu.gd" type="Script" id=8]
+[ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.25, 467.448 )
@@ -17,9 +17,9 @@ script = ExtResource( 1 )
 
 [node name="Background" parent="." instance=ExtResource( 5 )]
 
-[node name="WaterArea" parent="." instance=ExtResource( 2 )]
-visible = false
-position = Vector2( 654, 491 )
+[node name="NPC" parent="." instance=ExtResource( 9 )]
+position = Vector2( 254, 151 )
+npc_name = "Bu RT"
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 973, 453 )
@@ -67,10 +67,6 @@ position = Vector2( 988, 467 )
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
 
-[connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
-[connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
-[connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderRumahRT1" to="LevelBorderRumahRT1" method="_on_LevelBorderRumahRT1_body_entered"]
 [connection signal="body_entered" from="LevelBorderAirBuntu" to="LevelBorderAirBuntu" method="_on_LevelBorderAirBuntu_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach3" to="LevelBorderBeach3" method="_on_LevelBorderBeach3_body_entered"]

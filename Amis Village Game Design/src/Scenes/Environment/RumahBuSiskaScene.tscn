@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
-[ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=5]
@@ -27,7 +26,8 @@ margin_bottom = 126.0
 text = "RUMAH BU SISKA"
 
 [node name="NPC" parent="." instance=ExtResource( 5 )]
-position = Vector2( 208, 206 )
+position = Vector2( 346, 368 )
+npc_name = "Siska"
 
 [node name="LevelBorderRumahPakLe" type="Area2D" parent="."]
 script = ExtResource( 6 )
@@ -37,10 +37,6 @@ position = Vector2( 513, 669 )
 rotation = 1.57041
 shape = SubResource( 1 )
 
-[node name="WaterArea" parent="." instance=ExtResource( 2 )]
-visible = false
-position = Vector2( 558, 547 )
-
 [node name="RumahPakLePos" type="Position2D" parent="."]
 position = Vector2( 979, 547 )
 
@@ -48,7 +44,3 @@ position = Vector2( 979, 547 )
 pause_mode = 2
 
 [connection signal="body_entered" from="LevelBorderRumahPakLe" to="LevelBorderRumahPakLe" method="_on_LevelBorderRumahPakLe_body_entered"]
-[connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
-[connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
-[connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]

@@ -12,6 +12,9 @@ var currentFishes
 var rng = RandomNumberGenerator.new()
 var my_random_number
 
+func _ready():
+	self.z_index = 1
+
 func invertProx(action, water_name):
 	if action == "entered":
 		inProximity = water_name
