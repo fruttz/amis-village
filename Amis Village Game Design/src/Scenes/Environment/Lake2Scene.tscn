@@ -1,13 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderLake1.gd" type="Script" id=2]
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=3]
+[ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 495.5, 36.5 )
+extents = Vector2( 500.25, 24.5 )
 
-[node name="Swamp" type="Node"]
+[node name="Lake2" type="Node"]
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="."]
@@ -15,19 +16,22 @@ margin_left = 618.0
 margin_top = 246.0
 margin_right = 667.0
 margin_bottom = 260.0
-text = "SWAMP"
+text = "LAKE2"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 535, 428 )
+
+[node name="WaterArea" parent="." instance=ExtResource( 4 )]
+position = Vector2( 200, 376 )
 
 [node name="LevelBorderLake1" type="Area2D" parent="."]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderLake1"]
-position = Vector2( 519, 653 )
+position = Vector2( 529.75, -45.5 )
 shape = SubResource( 1 )
 
 [node name="Lake1Pos" type="Position2D" parent="."]
-position = Vector2( 540, 540 )
+position = Vector2( 531, 41 )
 
 [connection signal="body_entered" from="LevelBorderLake1" to="LevelBorderLake1" method="_on_LevelBorderLake1_body_entered"]

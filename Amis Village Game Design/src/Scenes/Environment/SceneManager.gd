@@ -8,3 +8,5 @@ func _ready():
 	if Globals.previous_level != null:
 		$Player.set_position(get_node(Globals.previous_level + "Pos").position)
 	
+
+
