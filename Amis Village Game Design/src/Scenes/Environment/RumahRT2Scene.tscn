@@ -4,7 +4,7 @@
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/Scenes/Environment/Map/Pantai2Map.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Scenes/Environment/Map/PakRT2Map.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderBeach3.gd" type="Script" id=6]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahRT1.gd" type="Script" id=7]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderAirBuntu.gd" type="Script" id=8]
@@ -15,13 +15,13 @@ extents = Vector2( 26.25, 467.448 )
 [node name="RumahRT2" type="Node"]
 script = ExtResource( 1 )
 
-[node name="Node" parent="." instance=ExtResource( 5 )]
+[node name="Background" parent="." instance=ExtResource( 5 )]
 
 [node name="WaterArea" parent="." instance=ExtResource( 2 )]
-position = Vector2( 704, 404 )
+position = Vector2( 654, 491 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 637, 327 )
+position = Vector2( 973, 453 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 506.0
