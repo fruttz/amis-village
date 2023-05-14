@@ -1,19 +1,17 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/Assets/Map/3 RUMAH BUDI/F43F6BF9-E525-4840-A1A2-6DB862DCB6DD.png" type="Texture" id=1]
 
 [node name="Node" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
+texture = ExtResource( 1 )
 expand = true
-
-[node name="TextureRect4" type="Sprite" parent="."]
-scale = Vector2( 0.533333, 0.555556 )
-centered = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 z_index = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 61, 403, 394, 405, 395, 525, 1008, 529, 1008, 597, 3, 602, 0, 3, 1030, -1, 1024, 471, 780, 474, 776, 332, 730, 332, 727, 207, 683, 212, 620, 214, 618, 401, 723, 414, 723, 469, 441, 476, 438, 352, 499, 350, 496, 241, 365, 251, 364, 177, 339, 130, 235, 124, 211, 130, 182, 182, 180, 274, 55, 280 )

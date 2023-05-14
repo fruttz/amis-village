@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/C4D86AC8-BEBD-468B-810C-F982D81714EE.png-83647cad7baa6666292e4473f927bf16.stex"
+path="res://.import/85023C04-7E35-4427-882E-A5AD081E041C.png-bb01a888e19a6bab968368d3d862d373.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Assets/Map/4 PANTAI 1/C4D86AC8-BEBD-468B-810C-F982D81714EE.png"
-dest_files=[ "res://.import/C4D86AC8-BEBD-468B-810C-F982D81714EE.png-83647cad7baa6666292e4473f927bf16.stex" ]
+source_file="res://src/Assets/Map/3 RUMAH BUDI/85023C04-7E35-4427-882E-A5AD081E041C.png"
+dest_files=[ "res://.import/85023C04-7E35-4427-882E-A5AD081E041C.png-bb01a888e19a6bab968368d3d862d373.stex" ]
 
 [params]
 
