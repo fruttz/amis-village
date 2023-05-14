@@ -14,7 +14,7 @@
 
 [sub_resource type="CapsuleShape2D" id=22]
 radius = 15.5
-height = 9.0
+height = 3.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -103,10 +103,10 @@ scale = Vector2( 0.06, 0.06 )
 texture = ExtResource( 1 )
 hframes = 15
 vframes = 6
-frame = 19
+frame = 15
 
 [node name="PlayerCollider" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 47 )
+position = Vector2( 0, 53 )
 shape = SubResource( 22 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

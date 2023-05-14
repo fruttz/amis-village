@@ -58,7 +58,7 @@ shape = SubResource( 2 )
 position = Vector2( 302, 484 )
 
 [node name="RumahPakLePos" type="Position2D" parent="."]
-position = Vector2( 983, 465 )
+position = Vector2( 999, 460 )
 
 [node name="SwampPos" type="Position2D" parent="."]
 position = Vector2( 625, 64 )

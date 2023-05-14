@@ -38,7 +38,7 @@ shape = SubResource( 1 )
 script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelBorderRumahRT2"]
-position = Vector2( 1078, 316 )
+position = Vector2( 1120, 320 )
 rotation = 3.14296
 shape = SubResource( 1 )
 
