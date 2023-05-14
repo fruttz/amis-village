@@ -2,7 +2,7 @@ extends Control
 
 signal combat_finished
 
-onready var current_fish = get_parent().fish
+var current_fish 
 var normal_tint = Color.aquamarine.lightened(0.2)
 var window_tint = Color.red.lightened(0.2)
 
@@ -51,6 +51,7 @@ func catchSuccess():
 	add_child(dialog)
 	$Timer.stop()
 	self.visible = false
+	Inventory.add_fish(current_fish)
 
 func catchFailed():
 	var dialog = Dialogic.start("catch_failed")
@@ -61,6 +62,7 @@ func catchFailed():
 		
 
 func _on_Timer_timeout(): #main function
+	current_fish = get_parent().fish
 	var windows = catchDifficulty()
 	$CombatBar.value += 1
 	if catchWindow(windows[0], windows[1]):
@@ -94,3 +96,4 @@ func startTimer():
 func close(param):
 	if param == "close":
 		get_tree().paused = false
+

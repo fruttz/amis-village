@@ -20,16 +20,26 @@ func _ready():
 	for key in affection:
 		inventory[key] = affection[key]
 #	inventory = affection
-	print(affection)
+	print(inventory)
+
+func add_fish(fish):
+	inventory[ImportData.getFishName(fish)] += 1
+	print(inventory)
 	
 func updateAffection(fish, change):
 	affection[ImportData.getFishName(fish)] += change
 	if affection[ImportData.getFishName(fish)] >= ImportData.getFishAff(fish):
-		inventory[ImportData.getFishName(fish)] += 1
+		add_fish(fish)
 		# update inventory
 		affection[ImportData.getFishName(fish)] = 0
 		pass
 	print(affection, inventory)
+
+func checkFish(fish):
+	if inventory[fish] > 0:
+		return true
+	else:
+		return false 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
