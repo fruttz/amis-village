@@ -89,6 +89,8 @@ config/icon="res://icon.png"
 ImportData="*res://src/Scenes/Environment/data/ImportData.gd"
 Inventory="*res://src/Scenes/Player/Inventory.gd"
 Globals="*res://src/Scenes/Environment/Globals.gd"
+Interaction="*res://src/Scenes/Player/Interaction.gd"
+NpcRequirement="*res://src/Scenes/NPC/NPC_requirement.gd"
 
 [editor_plugins]
 

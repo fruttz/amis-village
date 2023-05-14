@@ -4,6 +4,7 @@ export var movementSpeed = 200
 export var fast_ms = 400
 signal fish1
 signal fish2
+signal interaction_finished
 var velocity = Vector2()
 var move_input = Vector2()
 var inProximity = ""
@@ -11,6 +12,7 @@ var inProximity = ""
 var currentFishes
 var rng = RandomNumberGenerator.new()
 var my_random_number
+onready var NPC = get_parent().get_node("NPC")
 
 func _ready():
 	self.z_index = 1
@@ -75,13 +77,44 @@ func _physics_process(delta):
 #		toggleInteractable(true)
 		var collision = get_slide_collision(i)
 		if Input.is_action_just_released("game_action") and collision.collider.name == "Front":
-			print(get_parent().get_node("NPC").npc_name)
-			var dialog = Dialogic.start("NPC_greeting/"+get_parent().get_node("NPC").npc_name)
-			dialog.pause_mode = PAUSE_MODE_PROCESS
-			add_child(dialog)
+			print(Interaction.set_interaction_type(NPC.npc_name))
+			if Interaction.NPC[NPC.npc_name] == 2:
+				fish_choice()
+			else:
+				interact_NPC(Interaction.set_interaction_type(NPC.npc_name))
+				if Interaction.NPC[NPC.npc_name] != 4:
+					Interaction.NPC[NPC.npc_name] += 1
+				
 #		toggleInteractable(false)
 	updateAnimation()
 
+func interact_NPC(type):
+	var dialog = Dialogic.start("NPC_"+ type + "/" + NPC.npc_name)
+	dialog.pause_mode = PAUSE_MODE_PROCESS
+	add_child(dialog)
+	
+
+func choice(param):
+	if param == "check_yes":
+		if check_inventory():
+			print("Ikan benar")
+			Inventory.inventory[NpcRequirement.requirement[NPC.npc_name]] = 0
+			#true dialogue
+			Interaction.NPC[NPC.npc_name] += 1
+		else:
+			print("Ikan salah")
+			#false dialogue
+	else:
+		interact_NPC("greeting")
+
+func fish_choice():
+	var dialog = Dialogic.start("give_fish")
+	dialog.pause_mode = PAUSE_MODE_PROCESS
+	dialog.connect("dialogic_signal", self, "choice")
+	add_child(dialog)
+
+func check_inventory() -> bool:
+	return Inventory.checkFish(NpcRequirement.requirement[NPC.npc_name])
 
 func _on_Area2D2_entered(water_name):
 	invertProx("entered", water_name)
@@ -93,7 +126,6 @@ func _on_Area2D_entered(water_name):
 	invertProx("entered", water_name)
 	$PlayerUI.show()
 	pass # Replace with function body.
-
 
 func _on_Area2D_exit():
 	invertProx("left","")
@@ -108,3 +140,4 @@ func _on_Area2D3_entered(water_name):
 func _on_NPC_body_entered(body):
 	print("check")
 	pass # Replace with function body.
+
