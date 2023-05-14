@@ -22,7 +22,7 @@ script = ExtResource( 1 )
 position = Vector2( 573, 457 )
 
 [node name="NPC" parent="." instance=ExtResource( 6 )]
-position = Vector2( 135, 227 )
+position = Vector2( 137, 295 )
 gravity_scale = -128.0
 
 [node name="Player" parent="." instance=ExtResource( 5 )]

@@ -1,14 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://src/Assets/Map/4 PANTAI 1/C4D86AC8-BEBD-468B-810C-F982D81714EE.png" type="Texture" id=1]
-[ext_resource path="res://src/Assets/Map/4 PANTAI 1/93C5FEA4-FE21-4223-9060-BF2A046E3E38.png" type="Texture" id=2]
+[ext_resource path="res://src/Assets/Map/4 PANTAI 1/B7122C53-B347-4C3C-B2D9-1F01210EC3A5.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/4 PANTAI 1/C9FB4983-F303-4164-A6F7-DF9B61A066F2.png" type="Texture" id=2]
+[ext_resource path="res://src/Assets/Map/4 PANTAI 1/0CBD8927-9C51-4142-AEDD-8CDED3793D06.png" type="Texture" id=3]
 
 [node name="Node" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 expand = true
 
 [node name="TextureRect4" type="Sprite" parent="."]
@@ -16,11 +17,23 @@ scale = Vector2( 0.533333, 0.555556 )
 texture = ExtResource( 2 )
 centered = false
 
+[node name="TextureRect5" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 1 )
+centered = false
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 z_index = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( -140, 4 )
 polygon = PoolVector2Array( 245, 120, 300, 114, 364, 80, 439, 26, 460, 12, 482, 11, 510, 43, 504, 308, 262, 303, 247, 192 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 641, 1, 645, 600, 1021, 599, 1025, -1 )
+polygon = PoolVector2Array( 650, -119, -4, -118, 4, -31, 648, -35, 645, 600, 1021, 599, 1023, -114 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 622, 407, 399, 403, 400, 306, 424, 215, 445.657, 180.526, 613, 186 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 465, 45, 467, 136, 545, 134, 545, 171, 612, 170, 615, 54, 535, 56, 536, 44 )
