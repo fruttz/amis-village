@@ -68,15 +68,18 @@ func _physics_process(delta):
 		var collision = get_slide_collision(i)
 		if Input.is_action_just_released("game_action") and collision.collider.name == "NPC":
 			print(collision.collider.npc_name)
+			get_tree().paused = true
 			var dialog = Dialogic.start("NPC/"+collision.collider.npc_name)
+			dialog.connect("dialogic_signal",self,"resume")
 			dialog.pause_mode = PAUSE_MODE_PROCESS
 			add_child(dialog)
 #		toggleInteractable(false)
 	updateAnimation()
-
-func toggleInteractable(a):
-	$MarginContainer.visible = a
-
+	
+func resume(param):
+	if param == "end":
+		get_tree().paused = false
+	
 func _on_Area2D2_entered(water_name):
 	invertProx("entered", water_name)
 #	currentFishes = 

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Assets/Map/2 Rumah bu siska/EE2574D6-5531-403B-8940-FD414F8378F2.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Map/2 Rumah bu siska/C6C2C134-AEDC-4E93-B563-021A443C9FD8.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 1021, 537, 635, 539, 631, 449, 471, 454, 472, 301, 305, 302, 306, 521, 525, 521, 524, 583, 856, 583, 859, 599, 282, 600, 273, 260, 701, 253, 708, 503, 1021, 498 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]

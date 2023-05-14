@@ -26,7 +26,7 @@ rect_scale = Vector2( 1.76147, 1.85237 )
 text = "LAKE"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 879, 347 )
+position = Vector2( 720, 510 )
 
 [node name="LevelBorderSwamp" type="Area2D" parent="."]
 script = ExtResource( 2 )
@@ -55,7 +55,7 @@ position = Vector2( 512, 37 )
 pause_mode = 2
 
 [node name="NPC" parent="." instance=ExtResource( 7 )]
-position = Vector2( 401, 273 )
+position = Vector2( 491, 139 )
 npc_name = "pak RT"
 
 [connection signal="body_entered" from="LevelBorderSwamp" to="LevelBorderSwamp" method="_on_LevelBorderSwamp_body_entered"]

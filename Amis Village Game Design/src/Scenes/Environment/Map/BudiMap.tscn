@@ -1,0 +1,19 @@
+[gd_scene format=2]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+expand = true
+
+[node name="TextureRect4" type="Sprite" parent="."]
+scale = Vector2( 0.533333, 0.555556 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
