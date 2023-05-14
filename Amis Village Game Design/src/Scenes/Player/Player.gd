@@ -16,7 +16,6 @@ func invertProx(action, water_name):
 		inProximity = water_name
 	elif action == "left":
 		inProximity = ""
-	print(inProximity)
 		
 
 func getInput():
@@ -39,6 +38,8 @@ func getInput():
 	if Input.is_action_just_released("game_action") and inProximity:
 	#		print(all[])
 		$"../Fishing".start()
+		$PlayerUI.hide()
+		
 #		print("you acquired "+ inProximity +" fish")
 	if Input.is_action_just_released("ui_cancel"):
 		if not $"../Pause".is_visible():
@@ -74,39 +75,23 @@ func _physics_process(delta):
 #		toggleInteractable(false)
 	updateAnimation()
 
-func toggleInteractable(a):
-	$MarginContainer.visible = a
 
 func _on_Area2D2_entered(water_name):
 	invertProx("entered", water_name)
 #	currentFishes = 
 	print(water_name)
 	pass # Replace with function body.
-
-
+	
 func _on_Area2D_entered(water_name):
 	invertProx("entered", water_name)
-	print(water_name)
-	pass # Replace with function body.
-
-
-func _on_Area2D2_exit():
-	invertProx("left","")
-	print("keluar")
+	$PlayerUI.show()
 	pass # Replace with function body.
 
 
 func _on_Area2D_exit():
 	invertProx("left","")
-	print("keluar")
+	$PlayerUI.hide()
 	pass # Replace with function body.
-
-
-func _on_Area2D3_exit():
-	invertProx("left","")
-	print("keluar")
-	pass # Replace with function body.
-
 
 func _on_Area2D3_entered(water_name):
 	invertProx("entered", water_name)

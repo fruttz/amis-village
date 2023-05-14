@@ -10,6 +10,7 @@
 [ext_resource path="res://src/Scenes/Player/walk_down.tres" type="Animation" id=8]
 [ext_resource path="res://src/Scenes/Player/idle_right.tres" type="Animation" id=9]
 [ext_resource path="res://src/Scenes/Player/idle_left.tres" type="Animation" id=10]
+
 [ext_resource path="res://src/Assets/NPC/tanda seru.png" type="Texture" id=11]
 
 [sub_resource type="CapsuleShape2D" id=22]
@@ -144,3 +145,17 @@ margin_right = 88.0
 margin_bottom = 87.0
 texture = ExtResource( 11 )
 expand = true
+
+[node name="PlayerUI" type="Control" parent="."]
+visible = false
+margin_left = -25.0
+margin_top = -128.0
+margin_right = 15.0
+margin_bottom = -88.0
+
+[node name="ActionNotif" type="TextureRect" parent="PlayerUI"]
+margin_right = 1800.0
+margin_bottom = 1800.0
+rect_scale = Vector2( 0.0277639, 0.0294116 )
+texture = ExtResource( 11 )
+stretch_mode = 1

@@ -1,6 +1,6 @@
 extends Node
 
-var w1 = preload("res://src/Scenes/Environment/Water.tscn")
+#var w1 = preload("res://src/Scenes/Environment/Water.tscn")
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
