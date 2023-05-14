@@ -22,7 +22,7 @@ script = ExtResource( 1 )
 position = Vector2( 573, 457 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 542, 288 )
+position = Vector2( 509, 409 )
 z_index = 1
 
 [node name="NPC" parent="." instance=ExtResource( 6 )]
