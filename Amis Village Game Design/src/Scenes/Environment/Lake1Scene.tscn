@@ -65,7 +65,7 @@ position = Vector2( 999, 460 )
 position = Vector2( 625, 64 )
 
 [node name="Lake2Pos" type="Position2D" parent="."]
-position = Vector2( 520, 560 )
+position = Vector2( 512, 537 )
 
 [node name="Fishing" parent="." instance=ExtResource( 4 )]
 pause_mode = 2

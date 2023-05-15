@@ -54,6 +54,7 @@ func getInput():
 			$PlayerSprite.visible = false
 			$FishingSprite_Left.visible = true
 			$FishingSprite_Left.playing = true
+		print("xdd")
 		$"../Fishing".start()
 		$PlayerUI.hide()
 		
@@ -155,3 +156,6 @@ func _on_Fishing_fishing_finished():
 	$FishingSprite_Left.playing = false
 	$PlayerSprite.visible = true
 
+
+func _on_WaterArea_entered(water_name):
+	pass # Replace with function body.

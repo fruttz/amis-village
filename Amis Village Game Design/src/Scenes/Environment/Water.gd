@@ -24,11 +24,3 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	emit_signal("exit")
 	pass # Replace with function body.
-
-
-
-
-
-
-func _on_Fishing_fishing_finished():
-	pass # Replace with function body.
