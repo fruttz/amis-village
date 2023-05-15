@@ -5,6 +5,7 @@ export var fast_ms = 400
 signal fish1
 signal fish2
 signal interaction_finished
+signal open_inv
 var velocity = Vector2()
 var move_input = Vector2()
 var inProximity = ""
@@ -57,7 +58,19 @@ func getInput():
 		print("xdd")
 		$"../Fishing".start()
 		$PlayerUI.hide()
-		
+	
+	if Input.is_action_just_released("inventory"):
+		print("xdd")
+		var a = get_node("../Node2")
+		print(a)
+		if a.is_visible():
+#			get_tree().paused = false
+			a.hide()
+		else:
+			emit_signal("open_inv")
+#			get_tree().paused = true
+			a.show()
+	
 #		print("you acquired "+ inProximity +" fish")
 	if Input.is_action_just_released("ui_cancel"):
 		if not $"../Pause".is_visible():

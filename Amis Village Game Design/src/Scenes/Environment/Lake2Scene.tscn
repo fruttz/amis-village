@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderLake1.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/Scenes/Environment/Water.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/Environment/Map/LakeMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Scenes/UI/Inventory.tscn" type="PackedScene" id=7]
 
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -35,6 +36,11 @@ position = Vector2( 531, 41 )
 
 [node name="Fishing" parent="." instance=ExtResource( 6 )]
 
+[node name="Node2" parent="." instance=ExtResource( 7 )]
+visible = false
+z_index = 2
+
+[connection signal="open_inv" from="Player" to="Node2" method="_on_MainScene_open_inv"]
 [connection signal="body_entered" from="WaterArea" to="WaterArea" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]

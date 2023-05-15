@@ -7,7 +7,6 @@ extends Node
 var num_of_fish
 var item = preload("InventoryItem.tscn")
 var counts = preload("LabelCount.tscn")
-signal open_inv
 signal close_inv
 # Called when the node enters the scene tree for the first time.
 func _ready():
