@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Amis Village Game Design"
-run/main_scene="res://src/Scenes/Environment/BeachScene1.tscn"
+run/main_scene="res://src/Scenes/Main/MainScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -92,6 +92,7 @@ Globals="*res://src/Scenes/Environment/Globals.gd"
 Interaction="*res://src/Scenes/Player/Interaction.gd"
 NpcRequirement="*res://src/Scenes/NPC/NPC_requirement.gd"
 WaterNames="*res://src/Scenes/Environment/WaterNames.gd"
+Bgm="*res://src/Scenes/Main/BGM.tscn"
 
 [editor_plugins]
 
