@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Scenes/UI/Inventory.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/Player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahRT2.gd" type="Script" id=6]
@@ -43,4 +44,9 @@ position = Vector2( 572, 565 )
 [node name="Fishing" parent="." instance=ExtResource( 4 )]
 pause_mode = 2
 
+[node name="Node2" parent="." instance=ExtResource( 3 )]
+visible = false
+z_index = 2
+
+[connection signal="open_inv" from="Player" to="Node2" method="_on_MainScene_open_inv"]
 [connection signal="body_entered" from="LevelBorderRumahRT2" to="LevelBorderRumahRT2" method="_on_LevelBorderRumahRT2_body_entered"]
