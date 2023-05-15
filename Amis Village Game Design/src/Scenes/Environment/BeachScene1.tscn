@@ -80,6 +80,6 @@ z_index = 2
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="open_inv" from="Player" to="Node2" method="_on_MainScene_open_inv"]
 [connection signal="body_entered" from="LevelBorderPlayground" to="LevelBorderPlayground" method="_on_LevelBorderPlayground_body_entered"]
-[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]
+[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
 [connection signal="fishing_finished" from="Fishing" to="Player" method="_on_Fishing_fishing_finished"]
