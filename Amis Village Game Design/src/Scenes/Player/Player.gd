@@ -45,7 +45,7 @@ func getInput():
 		velocity = velocity.normalized() * movementSpeed
 	
 	if Input.is_action_just_released("game_action") and inProximity:
-	#		print(all[])
+		print("xdd")
 		$"../Fishing".start()
 		$PlayerUI.hide()
 		
@@ -141,3 +141,7 @@ func _on_NPC_body_entered(body):
 	print("check")
 	pass # Replace with function body.
 
+
+
+func _on_WaterArea_entered(water_name):
+	pass # Replace with function body.
