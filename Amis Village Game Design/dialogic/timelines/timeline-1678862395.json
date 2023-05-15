@@ -4,7 +4,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is 3 persuade"
+			"text": "This is 4 persuade"
 		},
 		{
 			"emit_signal": "success",
