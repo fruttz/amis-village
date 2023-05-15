@@ -1,10 +1,12 @@
 extends Node
 
 var random = RandomNumberGenerator.new()
+signal fishing_finished
 
 # Initialize fish
-var fish_list = ImportData.getFishList("laut") #Ntar disesuaiin sama level
-var fish = randomCatch()
+onready var water_name = WaterNames.set_water_name(get_parent().name)
+onready var fish_list = ImportData.getFishList(water_name) #Ntar disesuaiin sama level
+onready var fish = randomCatch()
 
 func randomCatch():
 	random.randomize()
@@ -54,11 +56,10 @@ func start():
 
 # reset fish everytime combat or persuasion is finished
 func _on_Combat_combat_finished():
+	emit_signal("fishing_finished")
 	fish = randomCatch()
 
 func _on_Persuade_persuade_finished():
+	emit_signal("fishing_finished")
 	fish = randomCatch()
 
-func _process(delta):
-	if Input.is_action_just_pressed("move_left"):
-		$MarginContainer/TextureRect/AnimationPlayer.play("New Anim")

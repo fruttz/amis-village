@@ -39,6 +39,7 @@ func catchDifficulty():
 	return [window1, window2]
 
 func catchIndicatorTrue():
+	$"../MarginContainer/TextureRect/AnimationPlayer".play("New Anim")
 	$CombatBar.set_tint_progress(window_tint)
 
 func catchIndicatorFalse():
@@ -85,10 +86,6 @@ func _on_Timer_timeout(): #main function
 		catchFailed()
 		$CombatBar.value = 0
 		emit_signal("combat_finished")
-	
-	
-	
-	
 
 func startTimer():
 	$Timer.start()

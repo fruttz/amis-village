@@ -18,7 +18,7 @@ script = ExtResource( 3 )
 [node name="Node" parent="." instance=ExtResource( 8 )]
 
 [node name="WaterArea" parent="." instance=ExtResource( 4 )]
-position = Vector2( 657, 403 )
+position = Vector2( 824, 350 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 542, 288 )
@@ -41,6 +41,7 @@ rotation = -1.56127
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
+visible = false
 margin_left = 283.0
 margin_top = 109.0
 margin_right = 469.0
@@ -70,3 +71,4 @@ visible = false
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderBeach1" to="LevelBorderBeach1" method="_on_LevelBorderBeach1_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach3" to="LevelBorderBeach3" method="_on_LevelBorderBeach3_body_entered"]
+[connection signal="fishing_finished" from="Fishing" to="Player" method="_on_Fishing_fishing_finished"]

@@ -7,6 +7,7 @@
 [ext_resource path="res://src/Scenes/Environment/Map/LakeMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Fishing/FishingScene.tscn" type="PackedScene" id=6]
 
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 500.25, 24.5 )
 
@@ -15,18 +16,12 @@ script = ExtResource( 3 )
 
 [node name="Background" parent="." instance=ExtResource( 5 )]
 
-[node name="Label" type="Label" parent="."]
-margin_left = 618.0
-margin_top = 246.0
-margin_right = 667.0
-margin_bottom = 260.0
-text = "LAKE2"
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 760, 452 )
+script = ExtResource( 6 )
 
-[node name="WaterArea" parent="." instance=ExtResource( 4 )]
-position = Vector2( 317, 130 )
+[node name="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 306, 87 )
 
 [node name="LevelBorderLake1" type="Area2D" parent="."]
 script = ExtResource( 2 )
@@ -45,3 +40,4 @@ position = Vector2( 531, 41 )
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderLake1" to="LevelBorderLake1" method="_on_LevelBorderLake1_body_entered"]
+[connection signal="fishing_finished" from="Fishing" to="Player" method="_on_Fishing_fishing_finished"]

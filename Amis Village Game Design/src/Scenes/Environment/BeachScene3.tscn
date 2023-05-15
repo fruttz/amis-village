@@ -40,6 +40,7 @@ rotation = -0.00141501
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
+visible = false
 margin_left = 283.0
 margin_top = 109.0
 margin_right = 469.0
@@ -69,3 +70,4 @@ visible = false
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
 [connection signal="body_entered" from="LevelBorderRumahRT2" to="LevelBorderRumahRT2" method="_on_LevelBorderRumahRT2_body_entered"]
+[connection signal="fishing_finished" from="Fishing" to="Player" method="_on_Fishing_fishing_finished"]

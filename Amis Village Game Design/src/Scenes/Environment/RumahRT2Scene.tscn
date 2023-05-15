@@ -24,13 +24,6 @@ npc_name = "Bu RT"
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 973, 453 )
 
-[node name="Label" type="Label" parent="."]
-margin_left = 506.0
-margin_top = 112.0
-margin_right = 559.0
-margin_bottom = 126.0
-text = "RUMAH RT2"
-
 [node name="LevelBorderRumahRT1" type="Area2D" parent="."]
 script = ExtResource( 7 )
 
