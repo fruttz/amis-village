@@ -87,6 +87,7 @@ func _physics_process(delta):
 		var collision = get_slide_collision(i)
 		if Input.is_action_just_released("game_action") and collision.collider.name == "Front":
 			if Interaction.NPC[NPC.npc_name] == 2:
+				my_random_number = rng.randi_range(1,3)
 				fish_choice()
 			else:
 				interact_NPC(Interaction.set_interaction_type(NPC.npc_name))
@@ -105,13 +106,12 @@ func interact_NPC(type):
 func choice(param):
 	if param == "check_yes":
 		if check_inventory():
-			print("Ikan benar")
+			interact_NPC("true")
 			Inventory.inventory[NpcRequirement.requirement[NPC.npc_name]] = 0
-			#true dialogue
 			Interaction.NPC[NPC.npc_name] += 1
 		else:
-			print("Ikan salah")
-			#false dialogue
+			var loop_value = Dialogic.set_variable("loop_value", my_random_number)
+			interact_NPC("false")
 	else:
 		interact_NPC("greeting")
 

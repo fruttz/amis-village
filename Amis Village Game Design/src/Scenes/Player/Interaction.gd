@@ -1,13 +1,13 @@
 extends Node
 
 var NPC = {
-	"Pak RT": 0,
+	"Pak RT": 4,
 	"Bu RT" : 0,
 	"Pak Le": 0,
 	"Budi": 0,
 	"Siska": 0,
 	"Tengil1": 0,
-	"Mr. X": 0
+	"Mr. X": 4
 }
 
 func set_interaction_type(NPC_name):

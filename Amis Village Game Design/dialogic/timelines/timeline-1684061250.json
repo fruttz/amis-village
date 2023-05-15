@@ -24,7 +24,89 @@
 			"character": "character-1684056890.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Jadi gini"
+			"text": "Wah, kakak bisa mancing? Keren banget! Aku juga bakal jadi tukang pancing profesional di masa depan!."
+		},
+		{
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kevin Satu: Kak [player_name]! Tahu nggak sih, di sekolah tadi pagi seru banget pas pelajaran IPA! Kami disuruh bawa teman baru oleh Ibu Guru, pasti kelas jadi rame banget.\nKevin Dua: Iya, kak! Kalau tidak salah namanya TATANG?\nKevin Tiga: Bukan! Memangnya ada hewan air bernama TATANG?"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "TATANG …?"
+		},
+		{
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Daripada kami bingung, gimana kalau kak [player_name]  bantu kami carikan saja? Kakak mau, ‘kan? Kakak ‘kan jago mancing."
+		},
+		{
+			"choice": "Mau sih...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mau sih, tapi kasih imbalan ya!"
+		},
+		{
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ketiganya: Wah! Terima kasih banyak, ya, kak! Kami pasti kasih imbalan kok, kakak memangnya mau apa? Di sekolah ada yang jual spons goreng, spons krispi, spons balado, sate spons, bola-bola spons … uh, banyak deh, nanti pasti kami bawakan sesuatu buat kakak!"
+		},
+		{
+			"choice": "Iya, deh...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Iya, deh, apa pun bakal aku lakukan untuk kalian."
+		},
+		{
+			"character": "character-1684056890.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ketiganya: Serius, kak? Kak [player_name] memang yang terbaik, tidak salah kami minta bantuan ke kak [player_name]. Kalau kayak butuh teman buat menemani mancing, ajak kami saja ya, kak! Kami juga pengen belajar mancing."
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

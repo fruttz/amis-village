@@ -4,10 +4,10 @@
 	],
 	"variables": [
 		{
-			"id": "1679209385-787",
-			"name": "fish_portrait",
+			"id": "1679203790-648",
+			"name": "player_name",
 			"type": 0,
-			"value": "current_fish"
+			"value": "Nguyen"
 		},
 		{
 			"id": "1678004423-785",
@@ -16,10 +16,16 @@
 			"value": "string"
 		},
 		{
-			"id": "1679203790-648",
-			"name": "player_name",
+			"id": "1679209385-787",
+			"name": "fish_portrait",
 			"type": 0,
-			"value": "Nguyen"
+			"value": "current_fish"
+		},
+		{
+			"id": "1684166602-737",
+			"name": "loop_value",
+			"type": 0,
+			"value": "1"
 		}
 	]
 }

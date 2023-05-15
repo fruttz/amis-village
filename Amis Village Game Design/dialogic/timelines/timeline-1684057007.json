@@ -24,13 +24,13 @@
 			"character": "character-1684056890.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Kevin1: Halo, kak [player_name], kakak enggak punya kerjaan ya?\nKevin2: Sembarangan! Kak [player_name] sibuk tahu!"
+			"text": "Kevin Satu: Halo, kak [player_name], kakak enggak punya kerjaan ya?\nKevin Dua: Sembarangan! Kak [player_name] sibuk tahu!"
 		},
 		{
 			"character": "character-1684056890.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Kevin3: Kalau punya banyak uang aku pengen beli beyblade, deh, kak."
+			"text": "Kevin Tiga: Kalau punya banyak uang aku pengen beli beyblade, deh, kak."
 		}
 	],
 	"metadata": {
