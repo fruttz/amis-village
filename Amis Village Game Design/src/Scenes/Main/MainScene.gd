@@ -22,6 +22,7 @@ func _process(delta):
 #			$Pause.show()
 #
 	if Input.is_action_just_released("inventory"):
+		print("xdd")
 		if $Node.is_visible():
 #			get_tree().paused = false
 			$Node.hide()
