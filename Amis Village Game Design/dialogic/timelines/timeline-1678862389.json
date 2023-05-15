@@ -45,63 +45,103 @@
 			"character": "character-1677905391.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Wah! Kita ketemu lagi!"
-		},
-		{
-			"character": "character-1678007686.json",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "Hai, [player_name]. Mengapa kamu ke sini hari ini?"
-		},
-		{
-			"choice": "Aku ingin bertemu denganmu.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "Aku iseng lewat saja kemudian mampir.",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
+			"text": "Ini pertemuan ketiga kita! Aku sangat senang bisa bertemu denganmu lagi."
 		},
 		{
 			"character": "character-1678007686.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Aku juga sangat senang, aku suka dengan diskusi kita soal korupsi keluarga Pak RT kemarin, tapi tahu tidak sih, setelah bergosip dengan hewan air lain, aku dapat informasi menarik."
 		},
 		{
 			"character": "character-1677905391.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is 2 persuade"
+			"text": "Informasi apa?"
 		},
 		{
 			"character": "character-1678007686.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Ternyata … nama Pak RT adalah Pak RT! Jadi dia sebenarnya dari lahir sudah diharapkan jadi Ketua RT, kasihan sekali."
 		},
 		{
 			"character": "character-1677905391.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is 2 persuade"
+			"text": "Benarkah? Kasihan juga, ya sudah mendapat tekanan untuk menjadi Ketua RT sejak lahir."
 		},
 		{
 			"character": "character-1678007686.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Meskipun demikian kenapa dia korupsi ya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tidak tahu sih, mungkin memang hobi."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh iya, soal korupsi, aku kemarin bermimpi soal TATANG."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Memang apa hubungannya dengan korupsi?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tidak ada sih, tapi TATANG keren."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kenapa tuh kira-kira?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Karena dia tidak korupsi tentu saja!"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keren."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keren."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keren."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Keren."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akhirnya mereka mengobrol lebih lama mengenai korupsi yang tidak dilakukan oleh TATANG karena TATANG keren. Affection +1"
 		},
 		{
 			"emit_signal": "success",

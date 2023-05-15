@@ -1,14 +1,547 @@
 {
 	"events": [
 		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"port_defn": "1678004423-785",
+			"portrait": "[Definition]",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WAH INI DIA SAHABATKU! Kamu sudah melakukan apa saja?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Halo juga sahabatku! Mau tahu aja atau mau tahu banget?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mau tahu aja sih… Candaan kamu mirip Pak RT deh."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hah kenapa?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ya jadi kayak jokes. bapak-bapak"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hehe, aku kemarin habis bermain-main bersama orang-orang di desa. Makanya baru bertemu kamu lagi. Oh iya! Ngomong-ngomong soal bapak, aku jadi penasaran, sebenarnya kamu punya bapak kah?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*sesenggukan*"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aku harusnya nggak nanya ya…"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Eh nggak kok, gapapa! Kan kita udah jadi sahabat!! Aku hanya sedikit sedih sih…"
+		},
+		{
+			"choice": "Sedikit sedih kenapa?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yah, ayahku kemarin termakan oleh ikan bawah laut yang seram sekali. Kalau nggak salah, namanya ikan sungut ganda."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah… kok bisa?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "S-soalnya, aku kemarin sibuk lari-lari karena berantem sama ayahku…"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Turut berduka cita, yah."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hiks– makasih, tapi aku tidak pernah tahu sih ikan sungut ganda itu apa. Aku diceritakan kalau ikan itu ada lampunya di kepala, terus ada rahangnya dan giginya yang tajam-tajam."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hm, sepertinya aku pernah melihat spesies itu waktu sedang memancing."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Wah, seram sekali… Memangnya kamu memancing di mana?"
+		},
+		{
+			"choice": "Di daerah laut dekat Amis Village.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "S-sedekat itu? Takut… Ya ayahku ditemukan tidak jauh dari sana sih."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, kayaknya kalau yang itu memang lagi tersesat deh."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hah, kok kamu tahu?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Karena habitatnya di Samudra Arktik, Samudra Pasifik, Samudra Hindia, Samudra Atlantik, dan Laut Mediterania."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, kamu tahu banyak ya."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tentu saja, berkat Wik*pedia (/ˌwɪkɪˈpiːdiə/ wik-IH-pee-DEE-ə), proyek ensiklopedia daring multibahasa yang bebas dan terbuka, yang dijalankan oleh Yayasan Wik*media, organisasi nirlaba yang berbasis di Florida, Amerika Serikat. Nama Wik*pedia berasal dari gabungan kata wik* dan ensiklopedia. Wik*pedia dirilis pada tahun 2001 oleh Jimmy Wales dan Larry Sanger, dan sering digunakan sebagai karya referensi yang populer di Internet. Proyek Wik*pedia bertujuan untuk memberikan ilmu pengetahuan untuk khalayak umum."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh, aku takut kalau kepanjangan lagi, deh. Gapapa nggak usah dijabarkan lagi, kamu keren intinya."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hehe. Kamu keren juga kok. Kalau mau, ini aku ada ngebawa makanan khas daerah aku. Pas banget buat kamu yang lagi sedih."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, kamu bawa apa??"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pho (teletubbies)."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "T-teletubbies itu a– eh jangan deh, aku takut muncul Wik*pedia lagi."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oohh, tapi kalau mau tahu, Phở adalah masakan mi sapi dari Vietnam. Makanan ini berasal dari Hanoi dan menyebar ke selatan hingga ke Kota Ho Chi Minh, dan ke seluruh dunia. Mi untuk phở disebut bánh phở, dibuat dari te–"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "E-eh, heheheheh iya cukup ya hehehehehe. Kedengaran enak! Aku mau makan pho deh jadinya. Tapi gimana sih cara makannya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm, karena bentuknya mirip cacing, kamu coba makan dengan cara kamu makan cacing aja!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ooh, oke akan aku coba!” *tersedak pho (teletubbies)"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[fish_name]!!! Aku akan menolongmu!"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is 5 persuade"
+			"text": "[fish_name] pun diberi CPR oleh [player_name] dan merasa berhutang hidupnya atas Nguyen. Affection +1"
 		},
 		{
 			"emit_signal": "success",
 			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Ada di perairan yang dalam yang jauh dari sini.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Fuh, untunglah, ternyata agak jauh. Padahal kemarin pernah ditemukan cukup dekat di sini."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, itu kayaknya papasan pas lagi tersesat deh. Eh, tapi kamu pernah ada ketemu sesuatu yang tersesat gitu nggak sih?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Selain kamu? Hmm, kayaknya aku pernah lihat sesuatu yang hitam-hitam gitu di atas air ini. Tapi dia cuma ngambang gitu aja sih, dan nggak enak harumnya."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hah? Genderuwo nggak pake parfum?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Genderuwo itu a– m-maksudnya, ya kurang tahu sih, tapi datangnya dari rawa-rawa."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm menarik, aku sejauh ini belum bisa masuk rawa-rawa juga sih."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Iya, tapi aku takut kalau nanti si hitam-hitam itu bakal menutup satu permukaan air ini. Apa akunya yang terlalu cemas aja ya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hm, tetap menarik untuk dicek sih. Tapi, kalau menurut pengalaman aku, itu minyak bumi yang tercecer di lautan."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ohh, jadi biasanya apakah itu berbahaya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Iya, kebocoran minyak adalah sebuah peristiwa dimana bahan bakar cair hidrokarbon meluber ke lingkungan hidup, khususnya ekosistem laut, kegiatan manusia atau merupakan bentuk dari polusi. Istilah tersebut biasanya ditujukan kepada tumpahan minyak di laut, dimana minyak meluber ke samudra dan perairan pesisir, meskipun tumpahan juga dapat terjadi di darat."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I-ini dari Wik*pedia yah."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Betul, bahaya kan?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Iya sih, tapi lain kali tolong masukkan Trigger Warning sebelum memasukkan konten Wik*pedia ya."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok, siap. Yah, aku bakal coba cari informasi lagi terkait ini sih. Aku takut kamu kenapa-kenapa soalnya."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ih, kamu baik banget deh, aku jadi tersipu."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[fish_name] pun semakin baper karena kepedulian [player_name] terhadap [fish_name]. Affection +1"
+		},
+		{
+			"emit_signal": "success",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Mau aku hibur?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Boleh sih… Tapi jangan jokes Pak RT lagi dong."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, sayangnya tidak bisa. Aku sepertinya sudah terikat secara emosional dengan Pak RT, jadinya mirip, hehe."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kalau gitu kamu harus punya cara lain untuk menghiburku, coba nyanyi."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\nMC\t: “OH BETUL, aku teringat lagu yang terkenal di daerah asalku dari penyanyi favoritku, ada Mãi Yêu,\tĐâu Chỉ Riêng Em, Yesterday & Now, Hoàng Hôn Thức Giấc, Dường Như Ta Đã, Vút Bay, Trở Lại, To the Beat, dan Tâm (vol 8)."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kamu tahu banyak sekali ya soal daerah asalmu."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tentu saja, berkat Wik*pedia (wik-*H-pee-DEE-ə), proyek ensiklopedia daring multibahasa yang bebas dan terbuka, yang dijalankan oleh Yayasan Wik*media, organisasi nirlaba yang berbasis di Florida, Amerika Serikat. Nama Wik*pedia berasal dari gabungan kata wik* dan ensiklopedia. Wik*pedia dirilis pada tahun 2001 oleh Jimmy Wales dan Larry Sanger, dan sering digunakan sebagai karya referensi yang populer di Internet. Proyek Wik*pedia bertujuan untuk memberikan ilmu pengetahuan untuk khalayak umum."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Boleh udahan nggak sih bahas Wik*pedianya?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, kamu tidak suka ilmu pengetahuan, ya?"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sembarangan! Cita-citaku adalah agar bisa bersekolah, tahu."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah kamu keren juga. Sekolah adalah lembaga untuk para siswa mendapat pengajaran di bawah pengawasan guru. Sebagian besar negara memiliki sistem pendidikan formal yang umumnya wajib. Dalam sistem ini, siswa mengalami kemajuan melalui serangkaian kegia–."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "STOP."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hehe, maaf, karena kamu keren, aku akan memberikanmu hadiah. Sesuatu yang pernah aku bahas sebelumnya. Sepatu!"
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sepatu?"
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "epatu adalah salah satu jenis alas kaki (footwear) yang biasanya terdir–"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Aku sudah pernah dengar itu, pasti dari Wik*pedia juga kan? Tapi aku kan … tidak punya kaki."
+		},
+		{
+			"choice": "Tidak apa-apa, kamu bisa memajangnya saja.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Benar juga, itu akan jadi sesuatu yang paling berharga untukku."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Syukurlah kalau kamu suka dengan hadiah dariku."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[fish_name] menerima pemberian [player_name] dengan senang. Affection +1."
+		},
+		{
+			"emit_signal": "success",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Wah padahal punya atau tidaknya kaki itu soal mindset! Kamu bisa menumbuhkannya kalau mindset kamu sesuai.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eh? Sepertinya bukan begitu, deh? Kan ini soal genetik …."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah, itu mindset yang salah, sahabatku. Kalau kamu percaya bahwa kamu bisa menumbuhkan kaki, maka kaki akan tumbuh untukmu."
+		},
+		{
+			"character": "character-1678007686.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "... agak kurang masuk akal sih. Tapi tidak apa-apa, aku akan memajang hadiah ini dulu saja sebelum berhasil menumbuhkan kaki."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[fish_name] menerima pemberian [player_name] dengan senang???. Affection +1."
+		},
+		{
+			"emit_signal": "success",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
