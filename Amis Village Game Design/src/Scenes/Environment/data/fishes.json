@@ -26,9 +26,9 @@
         },
         {
             "id": "04",
-			"fish_name": "Kura-kura",
+			"fish_name": "Gurame",
 			"desc": "Kura-kura lucu",
-			"name": "Kura-Kura",
+			"name": "Gurame",
 			"rarity": 3,
 			"difficulty": 2,
 			"affection": 5
@@ -95,9 +95,9 @@
         },
         {
             "id": "04",
-			"fish_name": "Kura-kura",
+			"fish_name": "Gurame",
 			"desc": "Kura-kura lucu",
-			"name": "Kura-Kura",
+			"name": "Gurame",
 			"rarity": 3,
 			"difficulty": 2,
 			"affection": 5
