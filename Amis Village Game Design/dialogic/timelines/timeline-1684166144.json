@@ -1,0 +1,74 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683095271.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1684166602-737",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1684056767.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm, se eu tentar me lembrar de novo, parece que esse peixe é muito grande, a ponto de ontem TATANG estar cheio de comer isso. (Hmm, kalau Ibu coba ingat-ingat lagi, sepertinya ikan ini berukuran sangat besar, sampai-sampai kemarin TATANG kekenyangan gara-gara makan ini.)"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684166602-737",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"character": "character-1684056767.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah sim, ontem mamãe finalmente encontrou a receita, o nome desse menu especial é Tukul Arwana! Parece que você descreveu o peixe que precisa pescar. (Ah ya, Ibu kemarin akhirnya ketemu resepnya, nama menu spesial ini adalah Tukul Arwana! Sepertinya sudah menggambarkan ya ikan yang harus kamu tangkap itu apa.)"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684166602-737",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"character": "character-1684056767.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pelo que você lembra, a forma do peixe não é essa, vamos tentar de novo. (Seingat ibu bentuk ikannya bukan yang ini deh, ayo coba lagi.)\nVocê precisa de mais instruções? Mamãe de repente se lembrou de algo. (Kamu butuh petunjuk lagi kah? Ibu tiba-tiba teringat sesuatu soalnya.)"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684166144.json",
+		"name": "Bu RT"
+	}
+}

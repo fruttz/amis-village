@@ -162,7 +162,7 @@ scale = Vector2( 0.06, 0.06 )
 texture = ExtResource( 1 )
 hframes = 15
 vframes = 6
-frame = 78
+frame = 79
 
 [node name="FishingSprite_Right" type="AnimatedSprite" parent="."]
 visible = false

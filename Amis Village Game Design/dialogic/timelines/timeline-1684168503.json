@@ -5,7 +5,7 @@
 			"animation_length": 0,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
-			"character": "character-1684056890.json",
+			"character": "character-1683088691.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
 			"portrait": "Default",
@@ -21,21 +21,21 @@
 			"z_index": 0
 		},
 		{
-			"character": "character-1684056890.json",
+			"character": "character-1683088691.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Tadi di sekolah ada penjual spons goreng loh kak! Enak banget pakai bumbu balado sama keju. Kami juga beliin buat kakak karena kakak udah bantuin kami dapat nilai bagus di kelas IPA. Mami Siska melarang kami makan makanan yang seperti ini sih, jadi diam-diam aja ya kak, hehe."
+			"text": "INI DIAAA!!! Akhirnya usaha bapak sudah bisa cuan la– oh hehe maksudnya Miaw Miaw bisa ada teman dan tidak kesepian lagi, terima kasih banyak [player_name], terima kasih banyak!!!"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Obtained Satu Bungkus Spons Goreng"
+			"text": "Gurame memandang Miaw Miaw yang sudah tersenyum gembira dengan rasa takut, karena takut akan dimakan oleh Miaw Miaw."
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1684061342.json",
-		"name": "Tengil1"
+		"file": "timeline-1684168503.json",
+		"name": "Pak Le"
 	}
 }

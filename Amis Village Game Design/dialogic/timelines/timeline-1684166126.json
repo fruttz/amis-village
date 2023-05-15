@@ -1,0 +1,74 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1684166602-737",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hm bapak pernah ingat di buku yang bapak baca, katanya harus mancing waktu ‘chill’. Jujur bapak tidak tahu sih ‘chill’ ini maksudnya apa. Kan kamu masih muda ya dek, pasti ngerti."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684166602-737",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haduh, ini tolong ya dek lebih diperhatikan. Intinya, bapak coba baca-baca lagi kemarin, dan katanya ciri-cirinya jalannya lambat dek. Udah, itu aja informasinya yang tersisa. Tolong ya dek dicarikan."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684166602-737",
+			"event_id": "dialogic_012",
+			"value": "3"
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dek, seingat bapak bukan kayak gini bentuknya dek."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684166126.json",
+		"name": "Pak Le"
+	}
+}

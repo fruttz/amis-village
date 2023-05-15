@@ -24,7 +24,13 @@
 			"character": "character-1684056767.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Gracias"
+			"text": "Ah sim, [player_name]. Mãe encontrou este item enquanto cortava o peixe. No começo, minha mãe queria jogar fora, mas depois de pensar, você pode ficar com ele, então é um presente para você.\n(Oh iya, [player_name]. Ibu menemukan barang ini waktu memotong ikannya. Awalnya sih ibu mau buang, tapi habis dipikir-pikir, kamu simpan saja ya, jadi hadiah buat kamu.)"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Obtained Telurnya Tukul Arwana!"
 		}
 	],
 	"metadata": {

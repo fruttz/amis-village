@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mr. X_Sprite.png-421748f7060b168f262032d1491af414.stex"
+path="res://.import/Mr. X_sprite.png-f9106e264a6b5e0a1ded9f9a25bc2ac6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Assets/NPC/Mr. X_Sprite.png"
-dest_files=[ "res://.import/Mr. X_Sprite.png-421748f7060b168f262032d1491af414.stex" ]
+source_file="res://src/Assets/NPC/Mr. X_sprite.png"
+dest_files=[ "res://.import/Mr. X_sprite.png-f9106e264a6b5e0a1ded9f9a25bc2ac6.stex" ]
 
 [params]
 

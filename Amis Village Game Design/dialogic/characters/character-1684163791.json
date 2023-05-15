@@ -1,21 +1,21 @@
 {
-	"color": "#ffa8f1df",
+	"color": "#ffae12a8",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
-	"id": "character-1684056890.json",
+	"id": "character-1684163791.json",
 	"mirror_portraits": false,
-	"name": "Tengil",
+	"name": "TATANG",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 100,
-	"offset_y": 150,
+	"offset_x": 0,
+	"offset_y": 0,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://src/Assets/NPC/Tengil_portrait.png"
+			"path": ""
 		}
 	],
-	"scale": 75,
+	"scale": 100,
 	"theme": ""
 }

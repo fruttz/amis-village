@@ -24,18 +24,12 @@
 			"character": "character-1684056890.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Tadi di sekolah ada penjual spons goreng loh kak! Enak banget pakai bumbu balado sama keju. Kami juga beliin buat kakak karena kakak udah bantuin kami dapat nilai bagus di kelas IPA. Mami Siska melarang kami makan makanan yang seperti ini sih, jadi diam-diam aja ya kak, hehe."
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Obtained Satu Bungkus Spons Goreng"
+			"text": "Kevin Satu: WAH! JADI INI TEMAN BARU KAMI? TATANG! Terima kasih banyak ya, kak! Kami berterima kasih sekali dengan kak (Nguyen). Bu Guru pasti senang sekali dengan ini.\nKevin Dua: Namanya bukan TATANG!\nKevin Tiga: Kepitang!"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1684061342.json",
+		"file": "timeline-1684168529.json",
 		"name": "Tengil1"
 	}
 }

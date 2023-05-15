@@ -24,7 +24,51 @@
 			"character": "character-1684056767.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Realmente"
+			"text": "Bom dia! O espírito da pescaria, menino. (Selamat pagi! Semangat memancing, dik.)"
+		},
+		{
+			"character": "character-1684056767.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Menino, quero pedir ajuda, por favor, me escute. (Dik, ibu mau meminta tolong sesuatu, dengarkan ibu dong)"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "o que há de errado mãe? (Ada apa Bu?)"
+		},
+		{
+			"character": "character-1684056767.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bem, tente ouvir a mãe, doce irmã. Então você costuma ir 'Amisan' com seus amigos, certo? Então, porque este mês é o aniversário de TATANG em Amisan, mamãe quer preparar um menu especial, Tukul Arwana.\n(Nah, coba dengarkan Ibu ya, Adik manis. Jadi Ibu kan sering ‘Amisan’ bareng teman-teman Ibu ya. Nah, karena di bulan ini ada ulang tahun TATANG di Amisan, Ibu lagi mau memasak menu spesial, Tukul Arwana)"
+		},
+		{
+			"character": "character-1684056767.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você não pode pescar, amigo? Então, por favor. (Ibu kan tidak bisa memancing ya bestie. Jadi, tolonglah Ibu supaya bisa memasaknya)"
 		}
 	],
 	"metadata": {

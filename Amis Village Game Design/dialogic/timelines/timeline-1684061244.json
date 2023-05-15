@@ -24,7 +24,109 @@
 			"character": "character-1684056863.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Jadi gini"
+			"text": "Nak, kamu orang pertama yang bisa memancing di sini… menarik."
+		},
+		{
+			"character": "character-1684056863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nah, Ibu jadi ingin sedikit bercerita, sejak dari kemarin, Ibu seringkali melihat Bu RT dan circle-nya arisan di rumah Pak RT. Sejujurnya, Ibu tidak paham mereka sedang membicarakan apa."
+		},
+		{
+			"character": "character-1684056863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tapi, sepertinya mereka berbicara bahasa Portugal ya, nak? Setidaknya itu yang Ibu dapatkan sewaktu berkonsultasi bersama dukun di dekat sini. Tapi, dari dukun itu meminta sesuatu yang memang bahkan dukun tersebut tidak bisa dapatkan, maklum ga bisa mancing, tapi ibu lupa apa namanya secara jelas. Yang pasti, bahan ini hidup di air, tapi bukan ikan juga??"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Nak, kamu berbeda. Kamu bisa memancing, jadi Ibu mau meminta tolong ke kamu nak… Bisakah kamu tolong Ibu untuk memancingnya? Nanti Ibu berikan kamu beberapa hal yang menurut Ibu… mungkin kamu butuhkan"
+		},
+		{
+			"choice": "Akan saya usahakan, Bu Siska.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Akan saya usahakan, Bu Siska."
+		},
+		{
+			"character": "character-1684056863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Terima kasih banyak, nak [player_name]. Berkabar saja ya nanti kalau kamu membutuhkan bantuan selain dari memancing. Kalau mau bawa cemilan waktu memancing, kasih tahu saja ya nak. Ibu tunggu kabar baiknya."
+		},
+		{
+			"choice": "Tenang saja, apapun akan aku lakukan untukmu.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tenang saja, apapun akan aku lakukan untukmu."
+		},
+		{
+			"character": "character-1684056863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah.. manis sekali kamu, [player_name]. Bikin Ibu tersipu saja. Terima kasih banyak ya nak, kabari kalau kamu membutuhkan bantuan selain dari memancing. Kalau mau bawa cemilan waktu memancing, kasih tahu saja ya nak. Ibu tunggu kabar baiknya."
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

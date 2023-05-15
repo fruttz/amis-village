@@ -24,7 +24,109 @@
 			"character": "character-1683088691.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Jadi, gini"
+			"text": "Haaaaaaaa, kamu bisa mancing? Kenapa tak bilang dari kemarin? Kamulah orang yang aku cari-cari! Yang tidak ada di kampung ini!"
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nah, dengarkan dulu ceritaku dek. Jadi, coba kamu lihat dulu Miaw Miaw itu. Makin hari makin lemas ayunan tangannya. Kayaknya dia kesepian gara-gara sendirian di toko ini selain sama Bapak… Tapi ya aku tetap butuh Miaw Miaw buat tetap semangat supaya toko aku cuan."
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nah, jadi habis baca majalah langganan bapak, bapak ngelihat kalau ternyata gurame seirama dengan “kemakmuran”. Jadi, bapak memutuskan kalau kayaknya gurame bisa jadi penglaris toko yang ba— ekhm, maksudnya menjadi temannya Miaw Miaw. Yah, tapi bapak tidak bisa memancing sih."
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "“Eh, tapi bapak keingat, tadi kamu kan nunjukin kalau dek Nguyen bisa mancing ke bapak ya. Bapak jadi ada tawaran menarik buat adek. Kasih bapak gurame, dan adek bisa dapat diskon untuk semua pembelian di toko bapak, gimana?"
+		},
+		{
+			"choice": "Tawaran bisnis yang menarik",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tawaran bisnis yang menarik pak, saya terima langsung!"
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hehe mantap, kalau begitu ditunggu ya dek. Silahkan datang-datang ke toko ini kalau nanti butuh sesuatu."
+		},
+		{
+			"choice": "Hmm, diskon berapa persen pak?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm, diskon berapa persen pak?"
+		},
+		{
+			"character": "character-1683088691.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haiya, ternyata kamu pintar bisnis juga ya. Tenang aja, selain dari diskon 10%, adek bakal dapat sesuatu juga kok yang kayaknya menarik buat adek."
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

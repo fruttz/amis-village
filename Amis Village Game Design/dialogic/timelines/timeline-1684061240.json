@@ -24,7 +24,127 @@
 			"character": "character-1684056844.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Jadi gini"
+			"text": "Wah, lo bisa mancing? Itu PUNK BANGET, masbro! Ajarin gue dong kapan-kapan, biar gue MAKIN PUNK."
+		},
+		{
+			"character": "character-1684056844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Temen PUNK gue yang namanya TATANG juga ngakunya bisa mancing sih, masbro. Tapi gue sekarang nggak pernah ketemu doi lagi."
+		},
+		{
+			"character": "character-1684056844.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Lu kan tau ya, masbro, gue suka banget sama ikan yang lucu-lucu. Tapi di sini isinya cuma modelan kayak Pak RT sama istrinya yang bule doang."
+		},
+		{
+			"choice": "Jadi kamu mau aku ngapain, Budi?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jadi kamu mau aku ngapain, Budi?"
+		},
+		{
+			"character": "character-1684056844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jadi gini deh, gue pengen lu bawain gue ikan paling cakep, PALING PUNK, paling keren, yang pernah lu liat. Plis banget, ya, masbro."
+		},
+		{
+			"choice": "Tapi Pak RT juga lucu kok!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tapi Pak RT juga lucu kok! Jangan body shaming gitu dong."
+		},
+		{
+			"character": "character-1684056844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wah emang bener, sebelum bantuin gue, lu harus periksa mata dulu biar PENGLIHATAN LAHIR DAN BATIN lu jelas dan PUNK BANGET. Tapi intinya gue mau lu bantuin gue buat ketemu sama ikan paling lucu di dunia."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gimana kalau aku nggak mau?"
+		},
+		{
+			"character": "character-1684056844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yah perilaku lu nggak mencerminkan SIFAT DAN KRITERIA SEORANG PUNK banget masbro, lu harusnya mau menjadi MALAIKAT PENOLONG gue dalam kondisi seperti ini."
+		},
+		{
+			"character": "character-1677905391.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aku nggak terlalu peduli sama AGENDA PUNK kamu sih, tapi oke, aku bakal bantu asal kamu kasih aku petunjuk soal ikan PALING PUNK yang kamu maksud ya."
+		},
+		{
+			"character": "character-1684056844.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ayo aja gue mah, masbro. Trims banget ya lu udah mau bantuin gue."
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

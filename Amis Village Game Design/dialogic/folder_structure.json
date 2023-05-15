@@ -13,7 +13,8 @@
 				"character-1684056844.json",
 				"character-1684056863.json",
 				"character-1684056890.json",
-				"character-1684056906.json"
+				"character-1684056906.json",
+				"character-1684163791.json"
 			],
 			"folders": {
 
@@ -27,7 +28,8 @@
 			"files": [
 				"1678004423-785",
 				"1679203790-648",
-				"1679209385-787"
+				"1679209385-787",
+				"1684166602-737"
 			],
 			"folders": {
 
@@ -46,7 +48,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Timelines": {
@@ -64,6 +66,24 @@
 				"timeline-1684068272.json"
 			],
 			"folders": {
+				"NPC_false": {
+					"files": [
+						"timeline-1684166126.json",
+						"timeline-1684166134.json",
+						"timeline-1684166144.json",
+						"timeline-1684166152.json",
+						"timeline-1684166157.json",
+						"timeline-1684166161.json",
+						"timeline-1684166183.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
 				"NPC_greeting": {
 					"files": [
 						"timeline-1683088655.json",
@@ -109,6 +129,24 @@
 						"timeline-1684061329.json",
 						"timeline-1684061342.json",
 						"timeline-1684061346.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"NPC_true": {
+					"files": [
+						"timeline-1684168503.json",
+						"timeline-1684168508.json",
+						"timeline-1684168514.json",
+						"timeline-1684168519.json",
+						"timeline-1684168524.json",
+						"timeline-1684168529.json",
+						"timeline-1684168536.json"
 					],
 					"folders": {
 
