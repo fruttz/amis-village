@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/Scenes/Fishing/Persuade/Persuade.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Scenes/Fishing/Combat/Combat.gd" type="Script" id=2]
-[ext_resource path="res://src/Scenes/Fishing/FishingScene.gd" type="Script" id=3]
+[ext_resource path="res://src/Scenes/Fishing/Persuade/FishingScene.gd" type="Script" id=3]
 [ext_resource path="res://src/Assets/Fishing/Asset 10@1.5x.png" type="Texture" id=4]
 [ext_resource path="res://src/Assets/Fishing/Asset 14@1.5x.png" type="Texture" id=5]
 [ext_resource path="res://src/Assets/Fishing/Asset 15@1.5x.png" type="Texture" id=6]
@@ -61,6 +61,7 @@ margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 1024.0
 margin_bottom = 600.0
 texture = ExtResource( 7 )

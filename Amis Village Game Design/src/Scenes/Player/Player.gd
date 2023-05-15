@@ -46,6 +46,14 @@ func getInput():
 	
 	if Input.is_action_just_released("game_action") and inProximity:
 	#		print(all[])
+		if WaterNames.set_water_name(get_parent().name) == "laut":
+			$PlayerSprite.visible = false
+			$FishingSprite_Right.visible = true
+			$FishingSprite_Right.playing = true
+		else:
+			$PlayerSprite.visible = false
+			$FishingSprite_Left.visible = true
+			$FishingSprite_Left.playing = true
 		$"../Fishing".start()
 		$PlayerUI.hide()
 		
@@ -77,7 +85,6 @@ func _physics_process(delta):
 #		toggleInteractable(true)
 		var collision = get_slide_collision(i)
 		if Input.is_action_just_released("game_action") and collision.collider.name == "Front":
-			print(Interaction.set_interaction_type(NPC.npc_name))
 			if Interaction.NPC[NPC.npc_name] == 2:
 				fish_choice()
 			else:
@@ -140,4 +147,11 @@ func _on_Area2D3_entered(water_name):
 func _on_NPC_body_entered(body):
 	print("check")
 	pass # Replace with function body.
+
+func _on_Fishing_fishing_finished():
+	$FishingSprite_Right.visible = false
+	$FishingSprite_Right.playing = false
+	$FishingSprite_Left.visible = false
+	$FishingSprite_Left.playing = false
+	$PlayerSprite.visible = true
 

@@ -91,6 +91,7 @@ Inventory="*res://src/Scenes/Player/Inventory.gd"
 Globals="*res://src/Scenes/Environment/Globals.gd"
 Interaction="*res://src/Scenes/Player/Interaction.gd"
 NpcRequirement="*res://src/Scenes/NPC/NPC_requirement.gd"
+WaterNames="*res://src/Scenes/Environment/WaterNames.gd"
 
 [editor_plugins]
 
