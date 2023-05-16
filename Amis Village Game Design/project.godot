@@ -94,6 +94,10 @@ NpcRequirement="*res://src/Scenes/NPC/NPC_requirement.gd"
 WaterNames="*res://src/Scenes/Environment/WaterNames.gd"
 Bgm="*res://src/Scenes/Main/BGM.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
