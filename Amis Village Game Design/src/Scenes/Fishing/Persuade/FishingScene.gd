@@ -28,6 +28,7 @@ func randomCatch():
 	return current_fish
 
 func startCombat():
+	
 	$Combat.visible = true
 	$Combat.startTimer()
 

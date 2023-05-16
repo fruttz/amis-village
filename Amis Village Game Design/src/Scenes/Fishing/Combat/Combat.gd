@@ -88,6 +88,7 @@ func _on_Timer_timeout(): #main function
 		emit_signal("combat_finished")
 
 func startTimer():
+	print("xdd1")
 	$Timer.start()
 
 func close(param):
