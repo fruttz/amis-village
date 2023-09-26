@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/UI/Inventory.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahPakLe.gd" type="Script" id=6]
 [ext_resource path="res://src/Scenes/Environment/Map/SiskaMap.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/Scenes/GUI/Pause.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.25, 521.362 )
@@ -37,9 +38,13 @@ position = Vector2( 979, 547 )
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
 
-[node name="Node2" parent="." instance=ExtResource( 2 )]
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="PauseLayer" parent="GUILayer" instance=ExtResource( 8 )]
+visible = false
+
+[node name="Node2" parent="GUILayer" instance=ExtResource( 2 )]
 visible = false
 z_index = 2
 
-[connection signal="open_inv" from="Player" to="Node2" method="_on_MainScene_open_inv"]
 [connection signal="body_entered" from="LevelBorderRumahPakLe" to="LevelBorderRumahPakLe" method="_on_LevelBorderRumahPakLe_body_entered"]

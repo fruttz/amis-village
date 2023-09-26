@@ -61,7 +61,7 @@ func getInput():
 	
 	if Input.is_action_just_released("inventory"):
 		print("xdd")
-		var a = get_node("../Node2")
+		var a = get_node("../GUILayer/Node2")
 		print(a)
 		if a.is_visible():
 #			get_tree().paused = false
@@ -70,17 +70,6 @@ func getInput():
 			emit_signal("open_inv")
 #			get_tree().paused = true
 			a.show()
-	
-#		print("you acquired "+ inProximity +" fish")
-	if Input.is_action_just_released("ui_cancel"):
-		if not $"../Pause".is_visible():
-#			get_tree().paused = true
-#			$"../Pause".pause()
-			print("asa")
-			$"../Pause".show()
-		else:
-			$"../Pause".hide()
-#			get_tree().paused = false
 
 func updateAnimation():
 	if move_input == Vector2.ZERO:

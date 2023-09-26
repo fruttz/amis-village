@@ -67,10 +67,12 @@ position = Vector2( 459, 566 )
 [node name="Fishing" parent="." instance=ExtResource( 7 )]
 pause_mode = 2
 
-[node name="Pause" parent="." instance=ExtResource( 3 )]
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="PauseLayer" parent="GUILayer" instance=ExtResource( 3 )]
 visible = false
 
-[node name="Node2" parent="." instance=ExtResource( 10 )]
+[node name="Node2" parent="GUILayer" instance=ExtResource( 10 )]
 visible = false
 z_index = 2
 
@@ -78,8 +80,7 @@ z_index = 2
 [connection signal="body_exited" from="WaterArea" to="WaterArea" method="_on_Area2D_body_exited"]
 [connection signal="entered" from="WaterArea" to="Player" method="_on_Area2D_entered"]
 [connection signal="exit" from="WaterArea" to="Player" method="_on_Area2D_exit"]
-[connection signal="open_inv" from="Player" to="Node2" method="_on_MainScene_open_inv"]
+[connection signal="open_inv" from="Player" to="GUILayer/Node2" method="_on_MainScene_open_inv"]
 [connection signal="body_entered" from="LevelBorderPlayground" to="LevelBorderPlayground" method="_on_LevelBorderPlayground_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderBeach2_body_entered"]
-[connection signal="body_entered" from="LevelBorderBeach2" to="LevelBorderBeach2" method="_on_LevelBorderVillage_body_entered"]
 [connection signal="fishing_finished" from="Fishing" to="Player" method="_on_Fishing_fishing_finished"]

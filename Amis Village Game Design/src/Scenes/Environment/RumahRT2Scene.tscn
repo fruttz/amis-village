@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/UI/Inventory.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://src/Scenes/Environment/LevelBorderRumahRT1.gd" type="Script" id=7]
 [ext_resource path="res://src/Scenes/Environment/LevelBorderAirBuntu.gd" type="Script" id=8]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/Scenes/GUI/Pause.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.25, 467.448 )
@@ -61,11 +62,15 @@ position = Vector2( 988, 467 )
 [node name="Fishing" parent="." instance=ExtResource( 3 )]
 pause_mode = 2
 
-[node name="Node2" parent="." instance=ExtResource( 2 )]
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="PauseLayer" parent="GUILayer" instance=ExtResource( 10 )]
+visible = false
+
+[node name="Node2" parent="GUILayer" instance=ExtResource( 2 )]
 visible = false
 z_index = 2
 
-[connection signal="open_inv" from="Player" to="Node2" method="_on_MainScene_open_inv"]
 [connection signal="body_entered" from="LevelBorderRumahRT1" to="LevelBorderRumahRT1" method="_on_LevelBorderRumahRT1_body_entered"]
 [connection signal="body_entered" from="LevelBorderAirBuntu" to="LevelBorderAirBuntu" method="_on_LevelBorderAirBuntu_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach3" to="LevelBorderBeach3" method="_on_LevelBorderBeach3_body_entered"]

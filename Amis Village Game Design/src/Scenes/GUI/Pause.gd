@@ -8,21 +8,34 @@ extends PanelContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	self.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_just_released("ui_cancel"):
-#		get_tree().paused = false
-#		self.hide()
-		pass
+		var new_pause_state = not get_tree().paused
+		get_tree().paused = new_pause_state
+		self.visible = new_pause_state
+		
+#		
 	
-
-func pause():
-	get_tree().paused = true
 
 func _on_Button_pressed():
-	print('eeeeeeeeeeeeeeeeee')
+	get_tree().paused = false
+	self.visible = false
 	
-	pass # Replace with function body.
+
+
+func _on_QuitButton_pressed():
+	get_tree().quit()
+
+
+func _on_ControlButton_pressed():
+	$CenterContainer/Menu.visible = false
+	$CenterContainer/Controls.visible = true
+	
+
+func _on_BackButton_pressed():
+	$CenterContainer/Controls.visible = false
+	$CenterContainer/Menu.visible = true
