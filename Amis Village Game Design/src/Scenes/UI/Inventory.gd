@@ -53,6 +53,4 @@ func _process(delta):
 	pass
 
 
-func _on_MainScene_open_inv():
-	refresh()
-	pass # Replace with function body.
+

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/Scenes/Environment/SceneManager.gd" type="Script" id=1]
 [ext_resource path="res://src/Scenes/UI/Inventory.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/Scenes/Environment/LevelBorderAirBuntu.gd" type="Script" id=8]
 [ext_resource path="res://src/Scenes/NPC/NPC.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Scenes/GUI/Pause.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/Assets/UI/menu_buttonpng.png" type="Texture" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 26.25, 467.448 )
@@ -68,9 +69,22 @@ pause_mode = 2
 visible = false
 
 [node name="Node2" parent="GUILayer" instance=ExtResource( 2 )]
+pause_mode = 2
 visible = false
 z_index = 2
+
+[node name="PauseButton" type="TextureButton" parent="GUILayer"]
+pause_mode = 2
+margin_left = 927.0
+margin_top = -11.0
+margin_right = 2847.0
+margin_bottom = 1069.0
+rect_scale = Vector2( 0.075, 0.075 )
+texture_normal = ExtResource( 11 )
+stretch_mode = 3
 
 [connection signal="body_entered" from="LevelBorderRumahRT1" to="LevelBorderRumahRT1" method="_on_LevelBorderRumahRT1_body_entered"]
 [connection signal="body_entered" from="LevelBorderAirBuntu" to="LevelBorderAirBuntu" method="_on_LevelBorderAirBuntu_body_entered"]
 [connection signal="body_entered" from="LevelBorderBeach3" to="LevelBorderBeach3" method="_on_LevelBorderBeach3_body_entered"]
+[connection signal="open_inv" from="GUILayer/PauseLayer" to="GUILayer/Node2" method="_on_PauseLayer_open_inv"]
+[connection signal="pressed" from="GUILayer/PauseButton" to="." method="_on_PauseButton_pressed"]
